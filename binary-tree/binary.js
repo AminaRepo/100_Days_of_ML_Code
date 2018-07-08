@@ -1,7 +1,8 @@
 var tree;
 function setup()
 {
-	noCanvas();
+	createCanvas(600,400);
+	background(125);
 	tree=new Tree();
 	for (var i=0; i< 10; i++)
 	{
@@ -14,7 +15,7 @@ function setup()
 */		
 	console.log(tree);
 	tree.traverse();
-	var t=prompt(" Give the value you are searching for " );
+	var t=15;
     var result=tree.search(t);
 	if (result == null)
 	{
@@ -26,3 +27,4 @@ function setup()
 	}
 	
 }
+
