@@ -21,3 +21,10 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/binary-tree)
 
+### Day 2: July 09, 2018
+
+**Today's Progress**: I redefined the conception of the binary tree. Started my version visulation part. At the same time, I started learning Machine Learning (I jumped to session 3 of the youtube playlists I am watching). This time, the files are commited to the master branch. 
+
+**Thoughts:** The examples in [p5 examples] (https://p5js.org/examples/) were very helpful. I have issues about calcluating tree's nodes positions. Right now I don't see any relationship between the tree and ML (may be the language could be helpful).
+**Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
+
