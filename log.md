@@ -33,5 +33,6 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Today's Progress**: I modified the calculation of the nodes' coordinates, but still working on it. I also enrolled to the [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning)
 
 **Thoughts:** I may start coding the KNN algorithm after I am done with the binary tree
+
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
