@@ -7,7 +7,7 @@ function Node(val)
 	this.parent=null;
 	this.order=0;
 	this.x=width/2;
-	this.y= 10;
+	this.y= 15;
 	this.shape= new shape(this,1);
 }
 
@@ -19,9 +19,11 @@ Node.prototype.addNode =function (n,order)
 		if (this.left==null)
 		{
 			this.left= n;
-			n.parent=this;
-			n.order=this.order+1;
-         this.left.setPos(this.x- width / pow(2,n.order),0.25*height*n.order);
+			this.left.parent=this;
+			this.left.order=this.order+1;
+			var currO=this.order+1;
+         this.left.setPos(this.x-parseInt(((width/pow(2,currO))-2*20)/2),this.y+125);
+         console.log(this.left.x,this.left.y);
        			
 		}
 		else 
@@ -33,9 +35,12 @@ Node.prototype.addNode =function (n,order)
 	{
 			 if (this.right==null)
 			 {
-				 this.right=n;
-				 n.parent=this;
-				    this.right.setPos(this.x+ width / pow(2,n.order),0.25*height*n.order);
+				 this.right= n;
+			this.right.parent=this;
+			this.right.order=this.order+1;
+			var currO=this.order+1;
+				    this.right.setPos(this.x+parseInt(((width/pow(2,currO))-2*20)/2),this.y+125);
+				    console.log(this.right.x,this.right.y);
 			 }
 	else
 	 {

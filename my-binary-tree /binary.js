@@ -1,10 +1,11 @@
 var tree;
 var root;
 var inNodeVal, button, addText;
+var canva;
 function setup()
 { 
    root= null;	
-	createCanvas(1000,500);
+	canva=createCanvas(1000,500);
 	background(125);
    addText = createElement('h4', 'Value of the node you want to add: ');
    addText.position(width+20, 10);
@@ -16,9 +17,20 @@ function setup()
    button.position(inNodeVal.x + inNodeVal.width+10, inNodeVal.y );
    var val =inNodeVal.value();
 
-   button.mousePressed(function() { addNode(inNodeVal.value());});
-
+   button.mousePressed(function() { addNode(inNodeVal);});
+   var k=1000/50;
+   console.log('k='+k);
+  var clc=Math.log2(k);
+  var inClc=parseInt(clc);
+  inNodeVal.value(inClc);
+  var nb=0;
+	for (i=0;i<=inClc;i++)
+	nb=nb+ Math.pow(2,i);
 	
+	
+	console.log(nb);
+	console.log(500/inClc);
+	console.log(pow(2,4));
 	/*for (var i=0; i< 10; i++)
 	{
 		tree.addValue(floor(random(0,100)));
@@ -43,13 +55,16 @@ function setup()
 	
 }
 function draw() {
-	
+
 }
 
 
 
 
-function addNode(val) {
+function addNode(inNodeVal) {
+var val=inNodeVal.value();
+ 
+	inNodeVal.value('');
 	if(val=="")
 	{
 		window.alert('The node must have a value!');
@@ -66,6 +81,7 @@ function addNode(val) {
  console.log(n.value);
  n.printit();
 }
+
 }
 
 function test(val) {

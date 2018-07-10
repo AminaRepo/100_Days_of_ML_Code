@@ -17,8 +17,7 @@ shape.prototype.printit=function ()
 {
 	this.value.printit();
 }
-Node.prototype.setPos=function(x,y)
-{this.x=x;
-	this.y=y;
-	this.shape.value.setPos(x,y);
+shape.prototype.setPos=function(x,y)
+{
+	this.value.setPos(x,y);
 	}

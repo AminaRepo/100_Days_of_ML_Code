@@ -25,7 +25,7 @@ ellipseShape.prototype.printit=function ()
   noFill();
   ellipse(this.x,this.y,this.width,this.height);
 }
-Node.prototype.setPos=function(x,y)
+ellipseShape.prototype.setPos=function(x,y)
 {this.x=x;
 	this.y=y;
 
