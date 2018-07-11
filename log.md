@@ -26,13 +26,23 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Today's Progress**: I redefined the conception of the binary tree. Started my version visulation part. At the same time, I started learning Machine Learning (I jumped to session 3 of the youtube playlists I am watching). This time, the files are commited to the master branch. 
 
 **Thoughts:** The examples in [p5 examples] (https://p5js.org/examples/) were very helpful. I have issues about calcluating tree's nodes positions. Right now I don't see any relationship between the tree and ML (may be the language could be helpful).
+
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
-### Day 2: July 10, 2018
+### Day 3: July 10, 2018
 
 **Today's Progress**: I modified the calculation of the nodes' coordinates, but still working on it. I also enrolled to the [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning)
 
 **Thoughts:** I may start coding the KNN algorithm after I am done with the binary tree
+
+**Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
+
+
+### Day 3: July 11, 2018
+
+**Today's Progress**: Added a search part. I have to fix and enhance the visualization part. I started the course: [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning) today. I am in week one.
+
+**Thoughts:** The courses I am following are in python. May be I will program the KNN algorithm in python.
 
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
