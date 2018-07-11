@@ -6,12 +6,12 @@ function shape(n,stype)
 
 	
 }
-shape.prototype.lighUp= function () 
+shape.prototype.lightUp= function () 
 {
-	
+	this.value.lightUp();
 }
  shape.prototype.lightOff= function () {
-
+	this.value.lightOff();
 }
 shape.prototype.printit=function () 
 {

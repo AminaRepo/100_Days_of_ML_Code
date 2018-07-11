@@ -6,11 +6,21 @@ this.height=20;
 this.val=n.value;
 
 }
-ellipseShape.prototype.lighUp= function () 
+ellipseShape.prototype.lightUp= function () 
 {
 	
+  stroke(0,255,0);
+	 fill(0,255,0);
+  ellipse(this.x,this.y,this.width,this.height);
+   fill(0);
+  noStroke();
+  textAlign(CENTER);
+
+  text(this.val,this.x,this.y);
+  console.log(this.x,this.y);
 }
  ellipseShape.prototype.lightOff= function () {
+ this.printit();
 
 }
 ellipseShape.prototype.printit=function () 

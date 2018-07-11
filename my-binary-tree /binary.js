@@ -1,6 +1,6 @@
 var tree;
 var root;
-var inNodeVal, button, addText;
+var inNodeVal, button, addText,searchVal,searchText,anwerT;
 var canva;
 function setup()
 { 
@@ -18,11 +18,29 @@ function setup()
    var val =inNodeVal.value();
 
    button.mousePressed(function() { addNode(inNodeVal);});
+   
+   
+     searchText = createElement('h4', 'The value you are searching for: ');
+   searchText.position(width+20, inNodeVal.y+30);
+   answerT= createElement('h4', '');
+   
+   searchVal = createInput();
+   searchVal.position(width+20,searchText.y +searchText.height+40 );
+   
+   button2 = createButton('Search');
+   button2.position(searchVal.x + searchVal.width+10, searchVal.y );
+   answerT.position(searchVal.x,searchVal.y +20);
+   button3 = createButton('Clear');
+   button3.position(button2.x, button2.y+button2.height+20 );
+   var val2 =searchVal.value();
+
+   button2.mousePressed(function() { searchNode(searchVal,answerT);});
+      button3.mousePressed(function() { clearSearch(answerT,root);});
    var k=1000/50;
    console.log('k='+k);
   var clc=Math.log2(k);
   var inClc=parseInt(clc);
-  inNodeVal.value(inClc);
+
   var nb=0;
 	for (i=0;i<=inClc;i++)
 	nb=nb+ Math.pow(2,i);
@@ -31,34 +49,12 @@ function setup()
 	console.log(nb);
 	console.log(500/inClc);
 	console.log(pow(2,4));
-	/*for (var i=0; i< 10; i++)
-	{
-		tree.addValue(floor(random(0,100)));
-	}
-/*	tree.addValue(5);
-	tree.addValue(3);
-	tree.addValue(7);
-	tree.addValue(6);
-*/		
-/*	console.log(tree);
-	tree.traverse();
-	var t=15;
-    var result=tree.search(t);
-	if (result == null)
-	{
-		console.log('Not found');
-	}
-	else
-	{
-		console.log(result);
-	}*/
+
 	
 }
 function draw() {
 
 }
-
-
 
 
 function addNode(inNodeVal) {
@@ -76,25 +72,39 @@ var val=inNodeVal.value();
  if(root == null)
   {
   	root=n;
+  	root.printit();
   }	
  if(n!=root) root.addNode(n,0);
  console.log(n.value);
- n.printit();
-}
 
 }
 
-function test(val) {
-	 var name =val ;
-  addText.html('hello '+name+'!');
-  inNodeVal.value('');
+}
 
-  for (var i=0; i<200; i++) {
-    push();
-    fill(random(255), 255, 255);
-    translate(random(width), random(height));
-    rotate(random(2*PI));
-    text(name, 0, 0);
-    pop();
-  }
+function searchNode(inNodeVal,answerT) {
+var val=inNodeVal.value();
+ 
+	inNodeVal.value('');
+	if(val=="")
+	{
+		window.alert('The node must have a value!');
+		
 	}
+	else {
+	
+ answerT.html(root.search(val));
+}
+
+}
+
+	
+function clearSearch(answerT,root)
+{
+	clear();
+	canva=createCanvas(1000,500);
+	background(125);
+answerT.html('');
+root.visit();
+
+	
+}

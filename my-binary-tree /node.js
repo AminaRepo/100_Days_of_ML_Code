@@ -20,9 +20,10 @@ Node.prototype.addNode =function (n,order)
 		{
 			this.left= n;
 			this.left.parent=this;
-			this.left.order=this.order+1;
-			var currO=this.order+1;
-         this.left.setPos(this.x-parseInt(((width/pow(2,currO))-2*20)/2),this.y+125);
+			this.left.order=order+1;
+			var currO=order+1;
+         this.left.setPos(this.x-parseInt(((width/pow(2,currO))-2*20)/2)-1,this.y+125);
+         this.left.printit();
          console.log(this.left.x,this.left.y);
        			
 		}
@@ -37,9 +38,11 @@ Node.prototype.addNode =function (n,order)
 			 {
 				 this.right= n;
 			this.right.parent=this;
-			this.right.order=this.order+1;
-			var currO=this.order+1;
-				    this.right.setPos(this.x+parseInt(((width/pow(2,currO))-2*20)/2),this.y+125);
+			this.right.order=order+1;
+			var currO=order+1;
+
+				    this.right.setPos(this.x+parseInt(((width/pow(2,currO))-2*20)/2)-1,this.y+125);
+				    			this.right.printit();
 				    console.log(this.right.x,this.right.y);
 			 }
 	else
@@ -58,7 +61,9 @@ Node.prototype.search=function(val)
 {
 	 if (this.value == val)
 	 {
-	   return this;		
+this.shape.lightUp();			   
+	   return "The node is found";
+	   
 	 }
 	 else
 	 {
@@ -70,12 +75,12 @@ Node.prototype.search=function(val)
 else
 	 if (val > this.value && this.right !=null)
 
-	{
+	{ 		
 		return this.right.search(val);
 	}
 	
 	 }
-	 return null;
+	 return "The node doesn't exist";
 }
 Node.prototype.setPos=function(x,y)
 {this.x=x;
@@ -94,16 +99,10 @@ Node.prototype.visit=function(parent)
 		 this.left.visit(this);
 	 }
 	console.log(this.value);
+   this.shape.printit();
+	 
 
-	fill(255);
-noStroke();
-textAlign(CENTER);
-	 text(this.value,this.x,this.y);
-	 stroke(255);
-	 noFill();
-ellipse(this.x,this.y,20,20); 
-
-		line(parent.x,parent.y,this.x,this.y);
+	//	line(parent.x,parent.y,this.x,this.y);
 
 
 
