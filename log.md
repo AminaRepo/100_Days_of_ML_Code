@@ -46,3 +46,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
+
+### Day 4: July 12, 2018
+
+**Today's Progress**: I fixed the visualization part and the nodes' order issue. I finished week1 of the course: [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning) today. 
+
+**Thoughts:** I was wrong about the language use, it's octave and not python. So I will continue programming with javascript unless I need to use another language.
+
+**Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
+
