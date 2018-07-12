@@ -2,12 +2,16 @@ var tree;
 var root;
 var inNodeVal, button, addText,searchVal,searchText,anwerT;
 var canva;
+var maxOrder=4;
+var initialW=1000;
+var initialH=500;
 function setup()
 { 
    root= null;	
-	canva=createCanvas(1000,500);
+	canva=createCanvas(initialW,initialH);
 	background(125);
    addText = createElement('h4', 'Value of the node you want to add: ');
+  
    addText.position(width+20, 10);
    
    inNodeVal = createInput();
@@ -36,6 +40,10 @@ function setup()
 
    button2.mousePressed(function() { searchNode(searchVal,answerT);});
       button3.mousePressed(function() { clearSearch(answerT,root);});
+      
+      button4 = createButton('New Tree');
+      button4.position(button3.x,button3.y+button3.height+50);
+      button4.mousePressed(newTree);
    var k=1000/50;
    console.log('k='+k);
   var clc=Math.log2(k);
@@ -59,7 +67,7 @@ function draw() {
 
 function addNode(inNodeVal) {
 var val=inNodeVal.value();
- 
+ var order;
 	inNodeVal.value('');
 	if(val=="")
 	{
@@ -68,13 +76,26 @@ var val=inNodeVal.value();
 	}
 	else {
 	
- var n=new Node(val);
+ var n=new Node(parseInt(val));
  if(root == null)
   {
+	  
   	root=n;
+  	root.setPos(width/2,15);
+  		
   	root.printit();
   }	
- if(n!=root) root.addNode(n,0);
+  else
+  {
+  
+  order=root.addNode(n,0,maxOrder);
+  if(order > maxOrder)
+  {
+	  maxOrder=order;
+	  resizeET();
+	  root.visit(root);
+  }
+}
  console.log(n.value);
 
 }
@@ -82,7 +103,7 @@ var val=inNodeVal.value();
 }
 
 function searchNode(inNodeVal,answerT) {
-var val=inNodeVal.value();
+var val=parseInt(inNodeVal.value());
  
 	inNodeVal.value('');
 	if(val=="")
@@ -100,11 +121,47 @@ var val=inNodeVal.value();
 	
 function clearSearch(answerT,root)
 {
-	clear();
-	canva=createCanvas(1000,500);
+  
+resizeCanvas(width,height);
 	background(125);
 answerT.html('');
 root.visit();
 
 	
+}
+function  resizeET()
+{var nw=50*pow(2,maxOrder)+1;
+var nh=50*(maxOrder+1);  
+resizeCanvas(nw,nh);
+background(125);
+addText.position(width+20, 10);
+addText.html('Add');
+  inNodeVal.position(width+20,addText.y +addText.height+40 );  
+	 button.position(inNodeVal.x + inNodeVal.width+10, inNodeVal.y );
+ searchText.position(width+20, inNodeVal.y+30);
+ searchText.html('Search');
+  searchVal.position(width+20,searchText.y +searchText.height+40 );
+    button2.position(searchVal.x + searchVal.width+10, searchVal.y );
+   answerT.position(searchVal.x,searchVal.y +20);
+    button3.position(button2.x, button2.y+button2.height+20 );
+          button4.position(button3.x,button3.y+button3.height+50);
+
+    	root.reSize(maxOrder,parseInt(width/2),15);
+}
+function newTree()
+{
+	root=null;
+	resizeCanvas(initialW,initialH);
+	background(125);
+	addText.position(width+20, 10);
+addText.html('Value of the node you want to add: ');
+  inNodeVal.position(width+20,addText.y +addText.height+40 );  
+	 button.position(inNodeVal.x + inNodeVal.width+10, inNodeVal.y );
+ searchText.position(width+20, inNodeVal.y+30);
+ searchText.html('The value you are searching for: ');
+  searchVal.position(width+20,searchText.y +searchText.height+40 );
+    button2.position(searchVal.x + searchVal.width+10, searchVal.y );
+   answerT.position(searchVal.x,searchVal.y +20);
+    button3.position(button2.x, button2.y+button2.height+20 );
+          button4.position(button3.x,button3.y+button3.height+50);
 }

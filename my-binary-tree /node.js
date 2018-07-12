@@ -11,8 +11,9 @@ function Node(val)
 	this.shape= new shape(this,1);
 }
 
-Node.prototype.addNode =function (n,order)
-{
+Node.prototype.addNode =function (n,order,maxOrder)
+{		var dist=(width/(Math.pow(2,order+1))-20)/2;
+     var hdist= ((height-20*(maxOrder+1))/maxOrder);
 
 	if ( n.value < this.value)
 	{
@@ -21,15 +22,14 @@ Node.prototype.addNode =function (n,order)
 			this.left= n;
 			this.left.parent=this;
 			this.left.order=order+1;
-			var currO=order+1;
-         this.left.setPos(this.x-parseInt(((width/pow(2,currO))-2*20)/2)-1,this.y+125);
+         this.left.setPos(this.x-parseInt(dist),this.y+	parseInt(hdist));
          this.left.printit();
          console.log(this.left.x,this.left.y);
-       			
+       			return order+1;
 		}
 		else 
 		{
-			 this.left.addNode(n,order+1);
+			 return this.left.addNode(n,order+1,maxOrder);
 		}
 	}
 		else if (n.value > this.value)
@@ -39,15 +39,15 @@ Node.prototype.addNode =function (n,order)
 				 this.right= n;
 			this.right.parent=this;
 			this.right.order=order+1;
-			var currO=order+1;
 
-				    this.right.setPos(this.x+parseInt(((width/pow(2,currO))-2*20)/2)-1,this.y+125);
+				    this.right.setPos(this.x + parseInt(dist),this.y+	parseInt(hdist));
 				    			this.right.printit();
 				    console.log(this.right.x,this.right.y);
+				    return order+1;
 			 }
 	else
 	 {
-		this.right.addNode(n,order+1);
+		return this.right.addNode(n,order+1,maxOrder);
 	 }
     }
     
@@ -89,7 +89,7 @@ Node.prototype.setPos=function(x,y)
 	}
 Node.prototype.printit=function()
 {
-	this.shape.printit(this.shape);
+	this.shape.printit();
 }
 	
 Node.prototype.visit=function(parent)
@@ -99,10 +99,9 @@ Node.prototype.visit=function(parent)
 		 this.left.visit(this);
 	 }
 	console.log(this.value);
-   this.shape.printit();
+   this.printit();
 	 
 
-	//	line(parent.x,parent.y,this.x,this.y);
 
 
 
@@ -112,3 +111,26 @@ Node.prototype.visit=function(parent)
 	}
    
 }
+Node.prototype.reSize= function(maxOr,nx,ny)
+{		 var distance=(width/(Math.pow(2,this.order+1))-20)/2;
+	      var hdist= ((height-20*(maxOr+1))/maxOr);	
+		  var chiLx=nx - parseInt(distance);
+		   var chiRx=nx + parseInt(distance);
+
+	var chiY=ny+parseInt(hdist);
+	 this.setPos(nx,ny);
+	 console.log(nx,ny);
+	 if (this.left !=null)
+	 {  
+          
+		 this.left.reSize(maxOr,chiLx,chiY);
+	 }
+	
+	
+	   if (this.right !=null)
+	{
+		this.right.reSize(maxOr,chiRx,chiY);
+	}
+	 
+}
+
