@@ -55,3 +55,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
+### Day 5: July 13, 2018
+
+**Today's Progress**: I started a new project related to linear regression. Implemented a simple univariate linear regression (not finished yet). This code is related to the exercise given in   [Exercise 2: Linear Regression](http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex2/ex2.html) with a little modification (it's why the code is in Replicated-code branch). My version in javascript will follow later. The data of the code can be downloaded from the page cited above.
+
+**Thoughts:** I will implement the KNN algorithm later. Found a data repository related to machin learning from which I downloaded some sets : [UCI machine learning repository](http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex2/ex2.html)
+
+**Link to work:** [linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/linear-regression)
+
+
