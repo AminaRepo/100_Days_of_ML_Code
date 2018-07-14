@@ -63,4 +63,15 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/linear-regression)
 
+### Day 6: July 14, 2018
+
+**Today's Progress**: I am in week2 of my course in coursera. It's about multivariate linear regression. I also added two calculus in the previous linear regression code (the plot of the cost function regarding to the number of iteration) and the plot of the cost functions for all the thetas variables calculated.
+
+**Thoughts:** I have to verify the values calculated (the last plot dose'nt seem right).
+
+**Link to work:** [linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/linear-regression)
+
+
+
+
 
