@@ -1,72 +1,78 @@
 #! /usr/local/bin/octave -qf
 x = load('ex2x.dat');
 y = load('ex2y.dat');
-figure 
+maxIt = 1500;
+
+% plot of the training set
+figure ;
 plot(x, y, 'o');
-ylabel('Height in meters')
-xlabel('Age in years')
+ylabel('Height in meters');
+xlabel('Age in years');
+
+%initialisations
 m = length(y);
 x = [ones(m, 1), x];
-RH =zeros(m,1);
 allT=[0;0];
-teta=[0;0]
-RJ=zeros(maxIt+1,maxIt+1);
-Rhteta=zeros(maxIt+1,maxIt+1,m);
+teta=[0;0];
+RJ=zeros(100,100);
+
+
 hteta=x * teta;
-maxIt=300;
-v=hteta- y;
-vv=power(v,2);
-vvv=sum(vv);
-J=[(1/(2*m))* vvv];
+J=[(sum(power(hteta-y,2)))/(2*m)];
+
+% minimising cost function using gradient descent algorithm
 for k=1:maxIt
-tetaT=[0;0]
-  tetaT=[0;0]
+tetaT=[0;0];
  for i=1:2
    for j=1:m
     tetaT(i)=tetaT(i)+  (hteta(j,k)-y(j))*x(j,i);
    end
    tetaT(i)=teta(i)-0.07/50*tetaT(i);
  end
- teta=tetaT
+ teta=tetaT;
  hteta=[hteta,x *teta];
- allT=[allT,teta]
- v=hteta(:,k)-y;
- vv=power(v,2);
- vvv=sum(vv);
+ allT=[allT,teta];
  
- J=[J,(1/(2*m))* vvv];
+ J=[J,(sum(power(hteta(:,k)-y,2)))/(2*m)];
 end
-%hteta
-%teta
+
+
+% plot of the final linear regression
+hold on;
+
+plot(x(:,2), hteta(:,k), '-');
 
 
 
-hold on
 
-plot(x(:,2), hteta(:,k), '-')
-
+% plot of the the cost function depending the iteration number
 xA= linspace(0,maxIt,maxIt+1);
-
-figure
+figure;
 plot(xA,J,'-');
+xlabel('Number of iteration'); ylabel('J(theta)');
 
 
-for i=1:maxIt+1
-  for j=1:maxIt+1
-    Rhteta(i,j,:) = x * [allT(1,i);allT(2,j)];
-    for k=1:m
-      RH(k)=Rhteta(i,j,k)
-      end
-    v=RH-y;
- vv=power(v,2);
- vvv=sum(vv);
- RJ(i,j)= (1/(2*m))* vvv;
+% plot of J depending on thetat variations      
+hold on;
+figure;
+plot3(allT(1,:),allT(2,:),J,'-');
+xlabel('Thetat 0'); ylabel('Thetat 1');zlabel('J(theta)');
 
-   end
+
+% plot of the cost function J(theta)
+theta0_vals = linspace(-3, 3, 100);
+theta1_vals = linspace(-1, 1, 100);
+for i = 1:length(theta0_vals)
+	  for j = 1:length(theta1_vals)
+	  t = [theta0_vals(i); theta1_vals(j)];
+	  RJ(i,j) = (sum(power ((x *t) -y,2)))/(2*m);
+    end
 end
-      
-figure
-surf(allT(1,:),allT(2,:), RJ')
-xlabel('\theta_0'); ylabel('\theta_1')
+
+RJ = RJ';
+figure;
+surf(theta0_vals, theta1_vals, RJ);
+xlabel('\theta_0'); ylabel('\theta_1');zlabel('J(theta)');
+
 
 
