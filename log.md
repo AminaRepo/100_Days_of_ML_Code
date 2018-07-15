@@ -73,5 +73,15 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 
 
+### Day 7: July 15, 2018
+
+**Today's Progress**: I almost finished week2 of my course in coursera. I verified the caluculs of the code of linear regression, added some plots and cleaned the code.
+
+**Thoughts:** The 3D  plot of the cost function using only the thetas calculated from the gradient descent algorithm has not any sense. So I ploted instead a linear plot that shows the variation of the cost functions regarding the values of the thetas caluculated during the algorith cited above.
+
+**Link to work:** [linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/linear-regression)
+
+
+
 
 
