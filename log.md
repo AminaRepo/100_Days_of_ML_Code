@@ -96,7 +96,7 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Today's Progress**: Enhancing of the ploting in progress. 
 
-**Thoughts:** Having some issues with the mapping function.
+**Thoughts:** Starting to think about the choice of the project of the 100_Days_of_ML_Code challenge.
 
 **Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
