@@ -102,6 +102,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 
 
+### Day 10: July 18, 2018
 
+**Today's Progress**: I finished the ploting. Now I have to implement the gradient descent algorithm. 
+
+**Thoughts:** Still searching for an ML project
+
+**Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
 
