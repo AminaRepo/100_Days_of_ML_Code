@@ -111,3 +111,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
 
+### Day 12: July 19, 2018
+
+**Today's Progress**: I am at the end of the week2 of coursera course (I have to finsish the submission exercises).
+
+**Thoughts:** I started the implementation of the regression estimation algorithm in javascript.
+
+**Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
+
+
