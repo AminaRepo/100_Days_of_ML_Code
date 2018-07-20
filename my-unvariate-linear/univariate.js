@@ -1,6 +1,4 @@
-
 var xstart=30;
-
 var arLen=5;
 var myWidth =800+ xstart;
 var myHeight =500+xstart;
@@ -22,6 +20,16 @@ var everyNx=5;
 var everyNy=5;
 var minX;
 var minY;
+var maxX;
+var maxY;
+var theta1=0;
+var theta2=1;
+var dontstop=false;
+var Paused=false;
+var alphaIn,alphaText,t1Text,t2Text,calcButton,stopButton,resetButton;
+var h;
+var J=[];
+var alphaValue;
 
 function preload() {
 	xdata=loadStrings('ex2x.txt');
@@ -52,7 +60,93 @@ function setup()
 	myCPlot();
 	plotData();
 
+	createMyElements();
+
+
+
 }
+
+
+function resetCalc() {
+	theta1=0;
+	theta2=1;
+	dontstop=false;
+	Paused=false;
+	t1Text.html('&Theta;1= 0');
+	t2Text.html(',&Theta;2= 1');		
+   calcButton.html('Estimation');	
+	
+	}
+function stopCalc() {
+if (dontstop)
+Paused=true;
+			dontstop=false;
+calcButton.html('Continue');			
+	}
+	
+function startCalc() {
+
+	if (alphaIn.value()=='')
+ {
+ 	window.alert('You must give a value for '+alphaText.html());
+ 	return;
+ }
+
+ alphaValue= parseFloat(alphaIn.value());
+			dontstop=true;
+			Paused=false;
+   calcButton.html('-');				
+
+	}
+function calculateLR()
+{var t1,t2;
+
+    t1=0;
+    t2=0;
+
+		for (i=0;i<xLen;i++)
+		{
+		  h[i]=0;
+		  h[i]=h[i]+ theta1+theta2*xdataI[i];
+		  t1=t1+h[i]-ydataI[i];
+		  t2=t2+(h[i]-ydataI[i])*xdataI[i];	  
+		  	  
+		}
+        t1=theta1-(alphaValue/xLen)*t1;
+		  t2=theta2-(alphaValue/xLen)*t2;
+	
+	     theta1=t1;
+	     theta2=t2;
+	     
+	     t1Text.html('&Theta;1= '+theta1);
+	     t2Text.html('&Theta;2= '+theta2);
+	
+}
+
+
+function createMyElements() {
+
+	alphaText=createElement('h5','&alpha;');
+	alphaText.position(10,myHeight+17);
+	alphaIn=createInput();
+	alphaIn.value('');
+	alphaIn.position(alphaText.x+ 15,myHeight+10);
+	t1Text=createElement('h5',',&Theta;1= 0');
+	t1Text.position(alphaIn.x+alphaIn.width+10,myHeight);
+	t2Text=createElement('h5',',&Theta;2= 1');
+	t2Text.position(alphaIn.x+alphaIn.width+250,myHeight);
+	calcButton=createButton('Estimation');
+	calcButton.position(t2Text.x+250,myHeight+17);
+	calcButton.mousePressed(startCalc);
+	stopButton=createButton('Pause');
+	stopButton.mousePressed(stopCalc);
+	stopButton.position(calcButton.x+calcButton.width+10,myHeight+17);
+	resetButton=createButton('Reset');
+	resetButton.mousePressed(resetCalc);
+	resetButton.position(stopButton.x+stopButton.width+10,myHeight+17);
+	
+	}
+
 
 
 function plotData() {
@@ -90,6 +184,11 @@ yunitVal=(map(myHeight-xstart-axDist,myHeight-xstart,0,(1-dataM)*min(ydataI),(1+
 //the origin values
 minX=((1-dataM)*min(xdataI)).toFixed(2);
 minY=((1-dataM)*min(ydataI)).toFixed(2);
+
+maxX=((1+dataM)*max(xdataI)).toFixed(2);
+maxY=((1+dataM)*max(ydataI)).toFixed(2);
+// estimation array
+h=new Array(xLen);
 	}
 
 
@@ -195,8 +294,40 @@ endShape();
 
 }
 
+function plotTheLine() {
+	var y1,y2,px1,px2,py1,py2;
+	
+strokeWeight(1);	
+	stroke(color(0,0,255));
+	y1= theta2*minX+theta1;
+	y2=theta2*maxX+theta1;
+	
+	
+	px1=map(minX,(1-dataM)*min(xdataI),(1+dataM)*max(xdataI),xstart,myWidth);
+   py1=map(y1,(1-dataM)*min(ydataI),(1+dataM)*max(ydataI),myHeight-xstart,0);	
+	px2=map(maxX,(1-dataM)*min(xdataI),(1+dataM)*max(xdataI),xstart,myWidth);	
+	py2=map(y2,(1-dataM)*min(ydataI),(1+dataM)*max(ydataI),myHeight-xstart,0);
+	
+	
+	line(px1,py1,px2,py2);
+	stroke(color(0,0,0));
+	
+}
+
+
 function draw() 
 {
+	clear();
+		createCanvas(myWidth,myHeight);
+	background(255, 204, 0);
+	myCPlot();
+	plotData();
+   if (Paused)		plotTheLine();
+	if(dontstop)
+	{
+		calculateLR();
+		plotTheLine();
+	}
 		
 }
 
