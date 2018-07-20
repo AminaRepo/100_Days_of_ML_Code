@@ -120,3 +120,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
 
+### Day 13: July 20, 2018
+
+**Today's Progress**: I finished the estimation algorithm in javascript. May be I will add a ploting of the cost function (regarding the number of iterations). 
+
+**Thoughts:** Perhaps I will use the plotly.js library to plot the cost function.
+
+**Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
+
+
+
