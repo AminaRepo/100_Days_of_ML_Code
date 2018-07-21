@@ -26,10 +26,14 @@ var theta1=0;
 var theta2=1;
 var dontstop=false;
 var Paused=false;
-var alphaIn,alphaText,t1Text,t2Text,calcButton,stopButton,resetButton;
+var alphaIn,alphaText,t1Text,t2Text,calcButton,stopButton,resetButton,divPlot;
 var h;
 var J=[];
 var alphaValue;
+var Iteration=[];
+var numIt=0;
+var everyI=50;
+var plot,data,layout;
 
 function preload() {
 	xdata=loadStrings('ex2x.txt');
@@ -58,14 +62,28 @@ function setup()
 	
 	
 	myCPlot();
-	plotData();
-
+	plotData();   
 	createMyElements();
-
+   setupPlotArea();
+   plotCost();
 
 
 }
 
+function setupPlotArea() {
+   divPlot=createDiv('');
+   divPlot.id('myDivPlot');
+   divPlot.style('position','absolute');
+	divPlot.style('width', (windowWidth- myWidth-40)+'px');
+	divPlot.style('height', myHeight+'px');
+	divPlot.style('top','0px');
+	divPlot.style('left',(myWidth+20)+'px');	 
+	divPlot.style('borderStyle','solid');
+	divPlot.style('borderColor','Yellow');	
+
+			
+	
+	}
 
 function resetCalc() {
 	theta1=0;
@@ -75,6 +93,10 @@ function resetCalc() {
 	t1Text.html('&Theta;1= 0');
 	t2Text.html(',&Theta;2= 1');		
    calcButton.html('Estimation');	
+   numIt=0;
+   J=[];
+   Iteration=[];
+   plotCost();
 	
 	}
 function stopCalc() {
@@ -99,7 +121,7 @@ function startCalc() {
 
 	}
 function calculateLR()
-{var t1,t2;
+{var t1,t2,t3,j;
 
     t1=0;
     t2=0;
@@ -112,14 +134,31 @@ function calculateLR()
 		  t2=t2+(h[i]-ydataI[i])*xdataI[i];	  
 		  	  
 		}
+        	  
+		  
         t1=theta1-(alphaValue/xLen)*t1;
 		  t2=theta2-(alphaValue/xLen)*t2;
 	
 	     theta1=t1;
 	     theta2=t2;
 	     
+	     numIt=numIt+1;
+	     j=0;
+        for (i=0;i<xLen;i++)
+        {
+        	h[i]=0;
+        	h[i]=h[i]+ theta1+theta2*xdataI[i];
+        	t3=h[i]-ydataI[i];
+        	t3=pow(t3,2);
+        	j=j+ t3;
+        }	     
+        j=j/(2*xLen);        
+        append(J,j);
+        append(Iteration,numIt); 	
+	     
 	     t1Text.html('&Theta;1= '+theta1);
 	     t2Text.html('&Theta;2= '+theta2);
+	     
 	
 }
 
@@ -314,7 +353,22 @@ strokeWeight(1);
 	
 }
 
+function plotCost() {
+if (numIt% parseInt(everyI)==0)
 
+{	
+	 plot = {
+  x: Iteration,
+  y: J,
+  mode: 'lines'
+};
+ data =[plot];
+
+ layout = {
+  title:'Cost Function (every '+everyI+ ' Iterations)'
+};
+Plotly.newPlot('myDivPlot',data,layout);
+}	}
 function draw() 
 {
 	clear();
@@ -322,11 +376,17 @@ function draw()
 	background(255, 204, 0);
 	myCPlot();
 	plotData();
-   if (Paused)		plotTheLine();
+
+   if (Paused)	
+   {	
+   plotTheLine();
+   		//plotCost();
+   }
 	if(dontstop)
 	{
 		calculateLR();
 		plotTheLine();
+		plotCost();
 	}
 		
 }
