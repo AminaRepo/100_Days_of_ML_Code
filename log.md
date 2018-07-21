@@ -31,6 +31,7 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 
 
+
 ### Day 3: July 10, 2018
 
 **Today's Progress**: I modified the calculation of the nodes' coordinates, but still working on it. I also enrolled to the [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning)
@@ -129,4 +130,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
 
+
+
+### Day 14: July 21, 2018
+
+**Today's Progress**: I finished the univariate linear regression using Javascript. I added the ploting of the cost function using Plotly.js library. The examples in [line charts tutorials from the library website] (https://plot.ly/javascript/line-charts/) where very helpful.
+
+**Thoughts:** I had issues with the plotly library. First, I ploted the cost function every iteration. But I had a 'too much' recursion error. So, I decided to plot the cost function every 50 iterations.
+
+**Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
