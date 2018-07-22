@@ -140,3 +140,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [my linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-unvariate-linear)
 
+
+### Day 15: July 22, 2018
+
+**Today's Progress**: I finished the multi univariate linear regression using octave. I used the steps provided in the coursera exercise as a guide. I used gradient descent and normal equation computation. The file is in Recplicate-code branch.
+
+**Thoughts:** I have to implement it in javascript (only the gradient descent algorithm). 
+
+**Link to work:** [mulrivariate linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/Replicated-code/linear-regression/univariateLR.m)
+
