@@ -147,5 +147,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Thoughts:** I have to implement it in javascript (only the gradient descent algorithm). 
 
-**Link to work:** [mulrivariate linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/Replicated-code/linear-regression/univariateLR.m)
+**Link to work:** [multi-variate linear regression](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/Replicated-code/linear-regression/univariateLR.m)
 
+
+### Day 16: July 23, 2018
+
+**Today's Progress**: I started the multivariate regression in javascript. I used octave to convert one file of data to two files (xdata.txt and ydata.txt). The x features values must be in a text file and separated by a space (columns delimiter is a space character).
+ 
+**Thoughts:** The code must works for any number of x features. The plotting of the data will no longer be needed.
+
+**Link to work:** [my multi-variate linear regression (javascript)](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-mvariate-linear)
