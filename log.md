@@ -157,3 +157,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Thoughts:** The code must works for any number of x features. The plotting of the data will no longer be needed.
 
 **Link to work:** [my multi-variate linear regression (javascript)](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-mvariate-linear)
+
+
+### Day 17: July 24, 2018
+
+**Today's Progress**: I added the normalization of the data (function normalizeData). I had to use the library [math.js](http://mathjs.org/). It defines functions that was useful for manipulating arrays and some other calcluations.
+ 
+**Thoughts:** After normalization, I have to define the function that calculates the approximation parameters \theta.
+
+**Link to work:** [my multi-variate linear regression (javascript)](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-mvariate-linear)
+
