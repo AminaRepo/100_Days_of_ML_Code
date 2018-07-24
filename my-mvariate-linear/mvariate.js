@@ -13,6 +13,8 @@ var mxdataI;
 var ydataI=[];
 var xmData=[];
 var ymData=[];
+var myStds=[];
+var myMeans=[];
 var xLen;
 var xDim;
 var yLen;
@@ -65,11 +67,13 @@ function setup()
 		 xSdata[i][j]=parseFloat(xSdata[i][j]);
 	}
 	xmData=xSdata;
+
 	
 		for(i=0;i<yLen;i++)
 	{
 		append(ydataI,parseFloat(ydata[i]));
 	}
+	
 	
 	//mapData();
 	normalizeData();
@@ -84,6 +88,7 @@ function setup()
 
 }
 
+
 function plotCost2()
 {
 }
@@ -91,6 +96,21 @@ function createMyElements2() {
 	}
 
 function normalizeData() {
+var t=[];
+	for (i=0;i<xDim;i++)
+	 {
+      t=math.squeeze(math.subset(xmData,math.index(math.range(0,xLen),i)));
+
+	 	append(myStds,math.std(t).toFixed(2));
+	 	append(myMeans,math.mean(t).toFixed(2));	 	
+	 	for (k=0;k<xLen;k++)
+	 	 {
+	 	 	xmData[k][i]=((t[k]-myMeans[i])/myStds[i]).toFixed(2);
+
+	 	 }	 	
+	  	
+	 }
+	
 	
 	}
 function findDim() {
