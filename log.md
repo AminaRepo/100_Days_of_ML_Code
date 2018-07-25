@@ -167,3 +167,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [my multi-variate linear regression (javascript)](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-mvariate-linear)
 
+
+
+### Day 18: July 25, 2018
+
+**Today's Progress**:  I finished the multivariate regression calculation in javascript. I ploted only the cost function for every iteration (without any issues). The code should work for any number of features.
+
+**Thoughts:** To verify my calculations, I compared it with the values given in octave. I had the same results for the same Alpha's and number of iterations values.
+
+**Link to work:** [my multi-variate linear regression (javascript)](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-mvariate-linear)
+
