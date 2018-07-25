@@ -32,7 +32,7 @@ var J=[];
 var alphaValue;
 var Iteration=[];
 var numIt=0;
-var everyI=50;
+var everyI=1;
 var plot,data,layout;
 
 function preload() {
@@ -365,15 +365,14 @@ if (numIt% parseInt(everyI)==0)
  data =[plot];
 
  layout = {
-  title:'Cost Function (every '+everyI+ ' Iterations)'
+  title:'Cost Function (every '+everyI+ ' Iteration(s))'
 };
 Plotly.newPlot('myDivPlot',data,layout);
 }	}
 function draw() 
 {
 	clear();
-		createCanvas(myWidth,myHeight);
-	background(255, 204, 0);
+        background(255, 204, 0);
 	myCPlot();
 	plotData();
 
