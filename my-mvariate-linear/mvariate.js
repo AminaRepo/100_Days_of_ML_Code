@@ -281,7 +281,7 @@ if (numIt% parseInt(everyI)==0)
  data =[plot];
 
  layout = {
-  title:'Cost Function (every '+everyI+ ' Iterations)',
+  title:'Cost Function (every '+everyI+ ' Iteration(s))',
    xaxis: {
     title: 'Number of Iterations'
   },
