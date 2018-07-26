@@ -177,3 +177,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [my multi-variate linear regression (javascript)](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-mvariate-linear)
 
+
+### Day 19: July 26, 2018
+
+**Today's Progress**:  I decided today to start a project and to continue learning at the same time. I found projects in two websites: [Kaggle](https://www.kaggle.com/competitions) and [DrivenData](https://www.drivendata.org/competitions/).
+
+**Thoughts:** I selected four projects. May be I will have to choose one of them.
+
+**Link to work:** ( no code yet).
+
+
