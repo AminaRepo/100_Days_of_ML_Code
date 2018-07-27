@@ -187,3 +187,11 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** ( no code yet).
 
 
+### Day 20: July 27, 2018
+
+**Today's Progress**:  I choose two projects to begin with. And I am continuing my coursera courses.
+
+**Thoughts:** I have to take other courses about available technologies and libraries (tensorflow.js, ml5, Scikit-Learn ... etc)
+
+**Link to work:** ( no code yet).
+
