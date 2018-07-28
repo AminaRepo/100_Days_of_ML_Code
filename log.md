@@ -187,3 +187,20 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** ( no code yet).
 
 
+### Day 20: July 27, 2018
+
+**Today's Progress**:  I choose two projects to begin with. And I am continuing my coursera courses.
+
+**Thoughts:** I have to take other courses about available technologies and libraries (tensorflow.js, ml5, Scikit-Learn ... etc)
+
+**Link to work:** ( no code yet).
+
+
+### Day 21: July 28, 2018
+
+**Today's Progress**:  I wrote the code about ml5 from the "coding Train" video stream (with a small modification).
+
+**Thoughts:** I have a WebGl warning issue. The classifier works, but I still have a warning on the console.
+
+**Link to work:** [ml5 begining] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/ml5-begin)
+
