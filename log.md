@@ -204,3 +204,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [ml5 begining] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/ml5-begin)
 
+
+### Day 22: July 29, 2018
+
+**Today's Progress**:  I started coding with tensorflow. I used examples in [seedbank] (https://tools.google.com/seedbank/). I wrote and run my code using colab notebook. 
+
+**Thoughts:** I will try later other codes related to ML.
+
+**Link to work:** [tensorflow begining] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/begin_tf)
+
