@@ -213,3 +213,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [tensorflow begining] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/begin_tf)
 
+
+
+### Day 23: July 30, 2018
+
+**Today's Progress**:  I tested another example from  [seedbank] (https://tools.google.com/seedbank/). It is about linear regression. Later I will do the tasks related to this example.
+
+**Thoughts:** The code is about a modified linear regression. A lot of different libraries where used. It is different from the previous one, in the sense that it doesn't use a graph ( may be it is written this way uniquely for tests purpose).
+
+**Link to work:** [tensorflow linear regression] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/tf_linear_regression)
+
