@@ -223,3 +223,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [tensorflow linear regression] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/tf_linear_regression)
 
+
+### Day 24: July 31, 2018
+
+**Today's Progress**:  I added a graph session to execute the code, and proposed values for the training (task1). I added to the file the solution proposed. 
+
+**Thoughts:**  I defined the steps I will follow for the ML projects I selected. In the repo I will report my advances in the project in Projects section and in this log  too.
+
+**Link to work:** [tensorflow linear regression] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/tf_linear_regression)
+
