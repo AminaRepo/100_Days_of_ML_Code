@@ -236,7 +236,7 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 ### Day 25: August 01, 2018
 
-**Today's Progress**:  I proposed values for the training (task2). And I modified the previous version of ml5-begin code.
+**Today's Progress**:  I proposed values for the training (task2). And I modified the previous version of ml5-begin code. The example about [the file input](https://p5js.org/reference/#/p5/createFileInput) was very helpful.
 
 **Thoughts:**  I had a 100% of identification of one of the images I tested (it's the [blue jay image]  (https://www.audubon.org/news/get-know-these-15-common-birds). It means (I suppose) that the image was in the training set of "MobileNet"  model. I had also an other p5 error (index error). This error doesn't appear at every execution (or at every loading of the html file).
 
