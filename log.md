@@ -243,3 +243,14 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** [tensorflow linear regression] (https://github.com/AminaRepo/100_Days_of_ML_Code/tree/Replicated-code/tf_linear_regression), [my ml5 begin](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-ml5-begin).
 
 
+### Day 26: August 02, 2018
+
+**Today's Progress**:  I started the first ML project. I am in step 1 : Data exploration. Before any statistics or displays of data, am trying to understantd the meaning of the features (and them relationships with a heart disease).
+
+**Thoughts:** I am thinking of using a neural network for the prediction.
+
+**Link to work:** no code yet.
+
+
+
+
