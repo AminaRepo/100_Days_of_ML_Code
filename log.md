@@ -253,4 +253,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 
 
+### Day 27: August 03, 2018
+
+**Today's Progress**:  I am still in data exploration phase.
+
+**Thoughts:** I am using octave to extract the data (and to retreive the first statistics).
+
+**Link to work:** no code yet.
+
 
