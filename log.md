@@ -30,8 +30,6 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
 
-
-
 ### Day 3: July 10, 2018
 
 **Today's Progress**: I modified the calculation of the nodes' coordinates, but still working on it. I also enrolled to the [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning)
@@ -252,5 +250,9 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** no code yet.
 
 
+**Today's Progress**:  I am still in data exploration phase.
 
+**Thoughts:** I am using octave to extract the data (and to retreive the first statistics).
+
+**Link to work:** no code yet.
 
