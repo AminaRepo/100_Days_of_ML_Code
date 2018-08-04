@@ -266,7 +266,7 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 ### Day 28: August 04, 2018
 
-**Today's Progress**:  For the project, I used octave to extract and convert the data into valid matrices. I applied the sigmoid linear function. Then, I tested the results with the test data and made my first submission.
+**Today's Progress**:  For the project, I used octave to extract and convert the data into valid matrices. I applied the sigmoid classification function. Then, I tested the results with the test data and made my first submission.
 
 **Thoughts:** The paire wise plotting of the features showed some interesting relashionships between them. 
 
