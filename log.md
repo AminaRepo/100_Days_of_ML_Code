@@ -269,4 +269,11 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** For the first submission, I obtained the 0.35689 as a loss value. I will write the sigmoid  classification function in  javascript for more tests.
 
 
+### Day 29: August 05, 2018
+
+**Today's Progress**: I am continuing my coursera courses. At the same time I am writing the javascript code for the logistic regression.
+
+**Thoughts:** I want to make the code works for any text file selected by the user.
+
+**Link to work:** no code yet.
 
