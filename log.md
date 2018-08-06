@@ -277,3 +277,12 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** no code yet.
 
+
+
+### Day 30: August 06, 2018
+
+**Today's Progress**: I wrote the functions related to the data file handling (and data extraction) for the javascript logistic regression.
+
+**Thoughts:** I have now to implement the logistic regression method.
+
+**Link to work:** [my_logistic_regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-logistic-regression).
