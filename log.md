@@ -293,7 +293,7 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 
 
-### Day 30: August 06, 2018
+### Day 31: August 07, 2018
 
 **Today's Progress**: I fisnished the code related to the logistic regression. I added a screenshot of the execution ([screenshot](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/my-logistic-regression/screenshot.png).
 
