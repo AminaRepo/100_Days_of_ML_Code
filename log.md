@@ -290,3 +290,14 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Thoughts:** I have now to implement the logistic regression method.
 
 **Link to work:** [my_logistic_regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-logistic-regression).
+
+
+
+### Day 30: August 06, 2018
+
+**Today's Progress**: I fisnished the code related to the logistic regression. I added a screenshot of the execution ([screenshot](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/my-logistic-regression/screenshot.png).
+
+**Thoughts:** I have to verify the calculations.May be, I will add to it some functionalites ( prediction and theta values saving ). 
+
+**Link to work:** [my_logistic_regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-logistic-regression).
+
