@@ -39,13 +39,14 @@ var J=[];
 var alphaValue;
 var Iteration=[];
 var numIt=0;
-var everyI=1;
+var everyI=50;
 var plot,data,layout;
 var myCanvas;
 var tArr,theArr;
 var xReady=0, yReady=0;
 var xChanged=0,yChange=0;
 var xinputT,yinputT;
+var elementsArray=[];
 
 
 
@@ -53,10 +54,10 @@ function setup()
 {  
 	myCanvas=createCanvas(myWidth,myHeight);
 	background(255, 204, 0);
-createMyElements1();
+   createMyElements1();
 
 
-   plotCost();
+  plotCost();
 
 
 
@@ -100,46 +101,67 @@ function handleFileY(file) {
 	function createMyElements1() {
 
 	 setupPlotArea();
-	xinputT=createElement('h5','x Data');
-	inputData1 = createFileInput(handleFileX);
-	yinputT=createElement('h5','y Data');
 
+	xinputT=createElement('h5','x Data');
+	xinputT.position(10,myHeight+10);
+	inputData1 = createFileInput(handleFileX);
+	inputData1.position(xinputT.x+60, xinputT.y+20);
+	yinputT=createElement('h5','y Data');
+	yinputT.position(xinputT.x,xinputT.height+xinputT.y+20);
 	inputData2 = createFileInput(handleFileY);
+	inputData2.position(inputData1.x,yinputT.y+20);
 
 }
-function createMyElements2() {
-	var t;
+
+function removeMyElements()
+{
+	  for (i=0;i< elementsArray.length;i++)
+	   elementsArray[i].remove();
+	   
+	elementsArray=[];
+}
+function createMyElements2() 
+	{var t;
 	
 	
 
 
-removeElements();
+removeMyElements();
 
-   createMyElements1();
+
 
 	alphaText=createElement('h5','&alpha;');
 	alphaText.position(10,17);
+	append(elementsArray,alphaText);	
+	
 	alphaIn=createInput();
 	alphaIn.value('');
 	alphaIn.position(alphaText.x+ 15,alphaText.y+10);
+	append(elementsArray,alphaIn);
+	
 		for (i=0;i<xDim+1;i++)
 		{
 			t=createElement('h5','&Theta;'+i+'= 0');
 			t.position(alphaIn.x+alphaIn.width+10,alphaText.y+i*(t.height));
 			tText.push(t);
+			append(elementsArray,t);
 		}
 	tText[0].html('&Theta;0= 0');
 		
 	calcButton=createButton('Estimation');
 	calcButton.position(tText[0].x+250,tText[0].y);
 	calcButton.mousePressed(startCalc);
+	append(elementsArray,calcButton);
+	
 	stopButton=createButton('Pause');
 	stopButton.mousePressed(stopCalc);
 	stopButton.position(calcButton.x+calcButton.width+10,tText[0].y);
+	append(elementsArray,stopButton);
+	
 	resetButton=createButton('Reset');
 	resetButton.mousePressed(resetCalc);
 	resetButton.position(stopButton.x+stopButton.width+10,tText[0].y);
-	
+	append(elementsArray,resetButton);
 	
 
 	}
@@ -148,36 +170,16 @@ function estimate() {
 	
 	}
 
-function normalizeData() {
-var t=[];
-	for (i=0;i<xDim;i++)
-	 {
-      t=math.squeeze(math.subset(xmData,math.index(math.range(0,xLen),i)));
 
-
-	 	append(myStds,math.std(t));
-
-	 	append(myMeans,math.mean(t));
-	 	for (k=0;k<xLen;k++)
-	 	 {
-
-	 	 	xmData[k][i]=((t[k]-myMeans[i])/myStds[i]);
-
-	 	 }	 	
-	  	
-	 }
-	
-	
-	}
 function findDim2() {
 	var s;
 //	s=split(trim(xdata[0]),' ');
 	 s=xmData[0].length;
-    tArr=new Array(s+1);
-	 theArr=new Array(s+1);	
+    tArr=[];
+	 theArr=[];	
 	
 	for (i=0;i<s+1;i++)
-	 theArr[i]=0;
+	 append(theArr,0);
 	theArr[0]= 0;
 	return s;
 	    
@@ -198,6 +200,8 @@ function setupPlotArea() {
 			
 	
 	}
+	
+	
 
 function resetCalc() {
 
@@ -216,8 +220,11 @@ function resetCalc() {
    calcButton.html('Estimation');	
    numIt=0;
    J=[];
+  
    Iteration=[];
+
   plotCost();
+
 	
 	}
 function stopCalc() {
@@ -242,25 +249,35 @@ function startCalc() {
 
 	}
 	
+function sigmoid(tX) {
+	return 1/(1+exp(-tX));
+	
+	
+	}
+		
 	function calculateLR2()
 	{
 		var t,j;
      
       for (i=0;i<xDim+1;i++)
-       tArr[i]=0;
-
-
-  
+       append(tArr,0);
+     
+    for (i=0;i<xLen;i++)
+        append(h,0);
+      
 
 		for (i=0;i<xLen;i++)
 		{
 		  h[i]=theArr[0];
 		  for(j=1;j<xDim+1;j++)
 		   h[i]=h[i]+ theArr[j]*xmData[i][j-1];
-		  
-		  tArr[0]=tArr[0]+ (h[i]-ydataI[i]) ;
+       		 
+		  h[i]=sigmoid(h[i]);
+
+		   
+		  tArr[0]=tArr[0]+ (h[i]-ymData[i][0]) ;
 		  for(j=1;j<xDim+1;j++)
-        tArr[j]=tArr[j]+(h[i]-ydataI[i])*xmData[i][j-1] ;
+        {tArr[j]=tArr[j]+(h[i]-ymData[i][0])*xmData[i][j-1]}
 
 		  	  
 		}
@@ -280,13 +297,21 @@ function startCalc() {
         	h[i]=theArr[0];
 		  for(j=1;j<xDim+1;j++)
 		   h[i]=h[i]+ theArr[j]*xmData[i][j-1];
-        	t=h[i]-ydataI[i];
-        	t=pow(t,2);
+		   
+		   h[i]=sigmoid(h[i]);
+
+		  t=(-ymData[i][0]*log(h[i]))-((1-ymData[i][0])*log(1-h[i]));
+	
+  
         	j=j+ t;
         }	     
-        j=j/(2*xLen);        
+        j=j/(xLen); 
+           
         append(J,j);
         append(Iteration,numIt); 	
+        
+ 
+       
 	     
        	for(j=0;j<xDim+1;j++)
 	     
@@ -297,7 +322,7 @@ function startCalc() {
 	}
 
 
-function plotCost() {
+function plotCost(){
 if (numIt% parseInt(everyI)==0)
 
 {	
@@ -321,6 +346,7 @@ if (numIt% parseInt(everyI)==0)
 Plotly.newPlot('myDivPlot',data,layout);
 }	}
 
+
 function findXlenght() {
     
 		t=split(xdata,"\n");
@@ -337,6 +363,7 @@ function findXlenght() {
 		for (i=0;i<t.length;i++)
 		 for (j=0;j<xmData[0].length;j++)
 		xmData[i][j]=parseFloat(xmData[i][j]);
+
 		return t.length;
 
 	}
@@ -353,9 +380,10 @@ function findXlenght() {
       }		
 		console.log(ymData[0].length);
 		
-				for (i=0;i<t.length;i++)
+		for (i=0;i<t.length;i++)
 		 for (j=0;j<ymData[0].length;j++)
 		ymData[i][j]=parseFloat(ymData[i][j]);
+
 		return t.length;
 
 	}
@@ -369,22 +397,33 @@ function draw()
  if (xReady && xChanged)  
    {
    	xLen=findXlenght();
-    	h=new Array(xLen);
+    	h=[];
    	xDim=findDim2();
         	ok=(xLen==yLen);
-        	   	if (!ok) window.alert("x and y must have the same length!");
+        	   	if (!ok){
+						 window.alert("x and y must have the same length!\n x size = "+ xLen+" and y size = "+yLen);        	   		 
+        	   		 removeMyElements();
+        	   		 
+
+        	   	}
 }
 
    if (yReady && yChanged)  
    {
    	yLen=findYlenght();
-    	h=new Array(yLen);
+    	h=[];
    	ok=(xLen==yLen);
-   	if (!ok) window.alert("x and y must have the same length!");
+   	if (!ok) 
+   	{  
+   		window.alert("x and y must have the same length!\n x size = "+ xLen+" and y size = "+yLen);
+   		removeMyElements();
+   		
+		}   		
 
 }
+
   
-if ( xReady && yReady && ok && (xChanged || yChanged))
+if ( xReady && yReady && ok && (xChanged||yChanged))
 {
  createMyElements2();
 }
