@@ -296,3 +296,13 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Thoughts:** I have to verify the calculations.May be, I will add to it some functionalites ( prediction and theta values saving ). 
 
 **Link to work:** [my_logistic_regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-logistic-regression).
+
+
+### Day 32: August 08, 2018
+
+**Today's Progress**: I saving nd predictions functions to the code. I added a screenshot of the new updated interface ([screenshot](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/my-logistic-regression/screenshot2.png).
+
+**Thoughts:** After more than 100.000 iterations, I scored ( 0.40698)less than my first submission (I used for this one octave fminunc function with only 400 Iterations). But it doesn't matter, since the objective of this code is to test the data's behavior (see how the thetas values change over iterations).
+
+**Link to work:** [my_logistic_regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-logistic-regression).
+
