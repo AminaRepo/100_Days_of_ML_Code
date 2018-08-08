@@ -46,8 +46,12 @@ var tArr,theArr;
 var xReady=0, yReady=0;
 var xChanged=0,yChange=0;
 var xinputT,yinputT;
-var elementsArray=[];
-
+var elementsArray=[],elementsArray3=[];
+var saveT,saveB,predictT,predictI,predictionM,classifyT,classifyB,classificationM;
+var	xTReady=false,
+	xTdata,
+	xTChanged=1,xTLen,xTmData=[],
+	xTDim;
 
 
 function setup() 
@@ -55,7 +59,6 @@ function setup()
 	myCanvas=createCanvas(myWidth,myHeight);
 	background(255, 204, 0);
    createMyElements1();
-
 
   plotCost();
 
@@ -142,14 +145,15 @@ removeMyElements();
 		for (i=0;i<xDim+1;i++)
 		{
 			t=createElement('h5','&Theta;'+i+'= 0');
+
 			t.position(alphaIn.x+alphaIn.width+10,alphaText.y+i*(t.height));
 			tText.push(t);
 			append(elementsArray,t);
 		}
 	tText[0].html('&Theta;0= 0');
 		
-	calcButton=createButton('Estimation');
-	calcButton.position(tText[0].x+250,tText[0].y);
+	calcButton=createButton('Optimization');
+	calcButton.position(tText[0].x+255,tText[0].y);
 	calcButton.mousePressed(startCalc);
 	append(elementsArray,calcButton);
 	
@@ -167,6 +171,61 @@ removeMyElements();
 	}
 
 function estimate() {
+	var result=[];
+	 for (i=0;i<xTLen;i++)
+       {
+       	 append(result,0);
+       }
+      
+
+		for (i=0;i<xTLen;i++)
+		{
+		  result[i]=theArr[0];
+		  for(j=1;j<xDim+1;j++)
+		   result[i]=result[i]+ theArr[j]*xTmData[i][j-1];
+       		 
+		  result[i]=sigmoid(result[i]);
+		 
+		  
+		 }
+		save(result,'Prediction-'+numIt,'txt');
+
+   	//predictionM.html('Prediction saved');
+
+	
+	}
+function classify() {
+	var result=[];
+	
+	if(xTReady)
+	{
+	 for (i=0;i<xTLen;i++)
+       {
+       	 append(result,0);
+
+       }
+      
+
+		for (i=0;i<xTLen;i++)
+		{
+		  result[i]=theArr[0];
+		  for(j=1;j<xDim+1;j++)
+		   result[i]=result[i]+ theArr[j]*xTmData[i][j-1];
+       		 
+		  result[i]=sigmoid(result[i]);
+		  if (result[i]>=0.5)		  
+		  result[i]=1;
+		  else
+		  result[i]=0;
+		  
+		 }
+
+		save(result,'classification-'+numIt,'txt');
+   	//classificationM.html('Classification saved');
+   }
+   else {
+   	window.alert('You must select test data first !\n');
+   	}
 	
 	}
 
@@ -181,6 +240,17 @@ function findDim2() {
 	for (i=0;i<s+1;i++)
 	 append(theArr,0);
 	theArr[0]= 0;
+	return s;
+	    
+
+	}
+	
+	function findDim3() {
+	var s;
+//	s=split(trim(xdata[0]),' ');
+	 s=xTmData[0].length;
+
+
 	return s;
 	    
 
@@ -210,14 +280,16 @@ function resetCalc() {
 	
 	for (i=0;i<xDim+1;i++)
 	 tText[i].html('&Theta;'+i+'= 0');
+	
 	tText[0].html('&Theta;0= 0');
 	
 	for (i=0;i<xDim+1;i++)
 	 theArr[i]=0;
 	theArr[0]= 0;
 	
+
 	//alphaIn.value('');		
-   calcButton.html('Estimation');	
+   calcButton.html('Optimization');	
    numIt=0;
    J=[];
   
@@ -225,13 +297,135 @@ function resetCalc() {
 
   plotCost();
 
+removeMyElements3();
 	
 	}
+	
+function findXTlenght()
+{
+			t=split(xTdata,"\n");
+		console.log(t.length);
+
+		xTmData=[];
+		for (i=0;i<t.length;i++)
+		{
+			t2=splitTokens(t[i]);
+			append(xTmData,t2);
+      }		
+		console.log(xTmData[0].length);
+		
+		for (i=0;i<t.length;i++)
+		 for (j=0;j<xTmData[0].length;j++)
+		xTmData[i][j]=parseFloat(xTmData[i][j]);
+
+		return t.length;
+
+}
+function handleClassify(file)
+{
+	if (file.type === 'text')
+	{
+
+	xTdata=file.data;
+
+   xTLen=findXTlenght();
+   xTDim=findDim3();
+   if (xTDim != xDim)
+   {
+   window.alert("Test Data must have the same number of features !\n,x number of features="+xDim+"\n test Data number of Features="+xDim);	
+   }
+   else {
+   	estimate();
+ 
+	}
+	}
+	else {
+		window.alert("You must select a text file !");
+		}
+}	
+	
+	
+function handlePredict(file)
+{
+	if (file.type === 'text')
+	{
+   xTReady=false;
+	xTdata=file.data;
+
+   xTLen=findXTlenght();
+   xTDim=findDim3();
+   if (xTDim != xDim)
+   {
+   window.alert("Test Data must have the same number of features !\n number of features of x="+xDim+"\n number of Features of test data="+xTDim);	
+   }
+   else {
+   	xTReady=true;
+   	estimate();
+ 
+	}
+	}
+	else {
+		window.alert("You must select a text file !");
+		}
+}	
+	
+	function createMyElements3()
+	{
+		removeMyElements3();
+		saveT= createElement('h5','Save &Theta;')
+					.position(calcButton.x+30,calcButton.y+calcButton.height+20);
+	
+	 append(elementsArray3,saveT);		
+     saveB= createButton('save')
+			.position(calcButton.x+100, saveT.y+15)
+			.mousePressed(function() {
+  			 save(theArr,'myThetas-'+numIt,'txt');
+		});		
+	append(elementsArray3,saveB);	
+	
+	 predictT= createElement('h5','Predict')
+					.position(saveT.x, saveB.height+saveB.y+20);
+	
+	 append(elementsArray3,predictT);		
+     predictI= createFileInput(handlePredict)
+			.position(saveB.x, predictT.y+15);
+			
+	append(elementsArray3,predictI);	
+		predictionM=createElement('h5','')
+						.position(predictI.x,predictI.y+predictI.height+15)
+						.style('color', 'Green');
+		append(elementsArray3,predictionM);		
+		
+			 classifyT= createElement('h5','Classify')
+					.position(predictT.x, predictionM.height+predictionM.y+20);
+	
+	 append(elementsArray3,classifyT);		
+     classifyB= createButton('Classification')
+			.position(predictI.x, classifyT.y+15)
+			.mousePressed(classify);
+			
+	append(elementsArray3,classifyB);	
+		classificationM=createElement('h5','')
+						.position(classifyB.x,classifyB.y+classifyB.height+15)
+						.style('color', 'Green');
+		append(elementsArray3,classificationM);				
+	}
+	
+	function removeMyElements3()
+	{
+	  for (i=0;i< elementsArray3.length;i++)
+	   elementsArray3[i].remove();
+	   
+	elementsArray3=[];
+	}
+	
 function stopCalc() {
 if (dontstop)
 Paused=true;
 			dontstop=false;
-calcButton.html('Continue');			
+calcButton.html('Continue');
+  xtReady=false;	
+  createMyElements3();		
 	}
 	
 function startCalc() {
@@ -243,9 +437,11 @@ function startCalc() {
  }
 
  alphaValue= parseFloat(alphaIn.value());
+ removeMyElements3();
 			dontstop=true;
 			Paused=false;
-   calcButton.html('-');				
+   calcButton.html('-');	
+			
 
 	}
 	
@@ -264,7 +460,8 @@ function sigmoid(tX) {
      
     for (i=0;i<xLen;i++)
         append(h,0);
-      
+       
+
 
 		for (i=0;i<xLen;i++)
 		{
