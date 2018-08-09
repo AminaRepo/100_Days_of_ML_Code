@@ -310,3 +310,14 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Link to work:** [my_logistic_regression](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-logistic-regression).
 
+
+
+### Day 33: August 09, 2018
+
+**Today's Progress**: I am following the tutorial [Build your First Deep Learning Neural Network Model using Keras in Python] (https://medium.com/@pushkarmandot/build-your-first-deep-learning-neural-network-model-using-keras-in-python-a90b5864116d), 
+and  [Kaggle Challenge](https://www.youtube.com/watch?v=suRd3UzdBeo) video for my project.
+
+**Thoughts:** I don't know if using jupyter (in local host) can be as easy as colab (I have to install some libraries before I start).
+
+**Link to work:** no code yet.
+
