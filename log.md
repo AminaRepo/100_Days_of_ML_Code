@@ -317,3 +317,14 @@ and  [Kaggle Challenge](https://www.youtube.com/watch?v=suRd3UzdBeo) video for m
 **Link to work:** no code yet.
 
 
+### Day 34: August 10, 2018
+
+**Today's Progress**: I finished the code. I submited the results, I scored  0.36069. I used the same parameters in the tutorial.
+The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter (only the number of feature). But I skiped the transformation of the categorical feature ( it was already changed). 
+ 
+ 
+**Thoughts:** The accuracy value (and my test results) changed at every execution. The worst one was 75% corresponding to the submitted prediction that scored 0.3069 . An other value equal to 83% scored the worst loss value (0.50236). I have to check the parameters used.
+
+**Link to work:** [my firs NN](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/myFirstNN)
+
+
