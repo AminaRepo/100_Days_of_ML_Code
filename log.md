@@ -31,7 +31,6 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 
 
-
 ### Day 3: July 10, 2018
 
 **Today's Progress**: I modified the calculation of the nodes' coordinates, but still working on it. I also enrolled to the [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning)
