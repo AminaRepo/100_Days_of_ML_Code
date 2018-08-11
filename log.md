@@ -333,3 +333,13 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** [my firs NN](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/myFirstNN)
 
+
+
+### Day 35: August 11, 2018
+
+**Today's Progress**: I did some reasearch about parameter selection (for neural networks). I selected some interesting papers.
+ 
+**Thoughts:** There is a lot of learning techniques. A lot of variations for each technique. A lot of Ideas to enahance those techniques. A lot of tools, librairies ....etc. But, since I am intereseted in neural networks, and since I know which aspect of the neural network I am concerned with (I mean, the aspect I think it have to be changed or enhanced), helped me through this research.
+
+**Link to work:** no code yet.
+
