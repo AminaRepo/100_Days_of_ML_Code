@@ -342,3 +342,12 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** no code yet.
 
+
+### Day 36: August 12, 2018
+
+**Today's Progress**: Dedicated day for learning python.
+ 
+**Thoughts:** Interesting language (I see why it is whidely used in ML ). I makes some necessary operations for ML (list manipulations, string processing ... etc) simple. The libraries installation it's simple and easy too.
+
+**Link to work:** no code yet.
+
