@@ -328,3 +328,29 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Link to work:** [my firs NN](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/myFirstNN)
 
 
+### Day 35: August 11, 2018
+
+**Today's Progress**: I did some reasearch about parameter selection (for neural networks). I selected some interesting papers.
+ 
+**Thoughts:** There is a lot of learning techniques. A lot of variations for each technique. A lot of Ideas to enahance those techniques. A lot of tools, librairies ....etc. But, since I am intereseted in neural networks, and since I know which aspect of the neural network I am concerned with (I mean, the aspect I think it have to be changed or enhanced), helped me through this research.
+
+**Link to work:** no code yet.
+
+
+### Day 36: August 12, 2018
+
+**Today's Progress**: Dedicated day for learning python.
+ 
+**Thoughts:** Interesting language (I see why it is whidely used in ML ). I makes some necessary operations for ML (list manipulations, string processing ... etc) simple. The libraries installation it's simple and easy too.
+
+**Link to work:** no code yet.
+
+
+### Day 37: August 13, 2018
+
+**Today's Progress**: Dedicated second day for learning python.
+ 
+**Thoughts:** Spent time in my coursera courses too.
+
+**Link to work:** no code yet.
+
