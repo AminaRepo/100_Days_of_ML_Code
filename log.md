@@ -354,3 +354,11 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** no code yet.
 
+
+
+Day 38: August 14, 2018
+Today's Progress: Thirf day for learning python.
+
+Thoughts: Amazing language. A lot of Beautiful things.
+
+Link to work: no code yet.
