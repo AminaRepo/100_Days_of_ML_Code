@@ -365,9 +365,17 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 ### Day 38: August 14, 2018
 
-**Today's Progress**: Thirf day for learning python.
+**Today's Progress**: The penultimate day of my python's language learning.
  
 **Thoughts:** Amazing language. A lot of Beautiful things.
+
+**Link to work:** no code yet.
+
+
+### Day 39: August 15, 2018
+**Today's Progress:** Thirf day for learning python.
+
+**Thoughts:** I have to plan what I will do for at least one week in advance.
 
 **Link to work:** no code yet.
 
