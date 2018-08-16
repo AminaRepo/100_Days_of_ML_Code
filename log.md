@@ -384,7 +384,7 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 ### Day 40: August 16, 2018
 
-**Today's Progress:** I finished my pyhthon learning. It dosen't mean that I know now everything about the language. It just means that I can now right efficiently (I hope) with this language.
+**Today's Progress:** I finished my python learning. It dosen't mean that I know  everything about the language. It just means that I can now write programs efficiently (I hope) with this language.
 
 **Thoughts:** the next focus will be on libraries.
 
