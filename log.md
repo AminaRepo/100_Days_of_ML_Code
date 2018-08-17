@@ -389,3 +389,13 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Thoughts:** the next focus will be on libraries.
 
 **Link to work:** no code yet.
+
+
+### Day 41: August 17, 2018
+
+**Today's Progress:** I tried to install python libraries listed by google search (the 29 libraries listed on the top of the search page for python libraries). I was able to install only eight from 11 libraries using pip. 
+
+**Thoughts:** For some librararies I have to find another way to install them (like tensorflow). 
+
+**Link to work:** no code yet.
+
