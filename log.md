@@ -392,3 +392,14 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** no code yet.
 
+
+### Day 42: August 18, 2018
+
+**Today's Progress:** Today I installed 8 other libraries (from 20). I think the problem is the platform I am using. I will try later; for the libraries I couldn't install, to install them on ubuntu.
+
+**Thoughts:** This time, the goole search gave another list of libraries ( I have written down the names of libraries listed yesterday). So, the toal of all the libraires listed by google is 50. I don't have to install all of them. It is just for a test purpose. Later, I will have to select the most important ones (that I will need).
+
+**Link to work:** no code yet.
+
+
+
