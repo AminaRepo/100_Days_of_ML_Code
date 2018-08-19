@@ -408,3 +408,14 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** no code yet.
 
+### Day 43: August 19, 2018
+
+**Today's Progress:** I added 2 other libraries that  wasn't listed.oday I installed 13 other libraries (from 21). Some of them were unavailable, and some others failed to install.
+
+**Thoughts:** I thought that the libraries where differents for the two versions of python ( 2 and 3)
+ But when installing, I found that the links and the versions of the downloaded packages were the same. So, after installing a library for python2, the corresponding downloaded package (the cached archive) was used for the installation with python3.
+
+**Link to work:** no code yet.
+
+
+
