@@ -412,3 +412,12 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 
 
+### Day 44: August 20, 2018
+
+**Today's Progress:** Trying to install tensorflow (must build from source). It requires Bazle to be installed. So, I have to build Bazle first. The distribution archive took time to download (still downloading right now). In the meanwhile, I am trying to install Theano. It needed scipy which failed to install first because of missing Fortran. After installing it, it generated other errors.
+
+**Thoughts:** I will spend more more days to install these libraires . If it doesn't work, I will try with ubuntu.
+
+**Link to work:** no code yet.
+
+
