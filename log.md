@@ -426,4 +426,14 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** no code yet.
 
+ 
+### Day 45: August 21, 2018
+
+**Today's Progress:** I installed q reqdy binary package py-scipy and py3-scipy. Then I installed theano. But when I tested the import of theano, it generated errors (the errors where different between python2 and python3). The compilation of Bazel failed too. The error concerned java memory issue.
+
+**Thoughts:** May be I will try ubuntu before investigating in those problems.
+
+**Link to work:** no code yet.
+
+
 
