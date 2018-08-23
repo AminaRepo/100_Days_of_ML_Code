@@ -440,4 +440,13 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 
 
+### Day 47.  August 23, 2018
+
+**Today's Progress:** From [github tesnsor flow issues] (https://github.com/tensorflow/tensorflow/issues/19104) and from [Github tensorflow v 1.6](https://github.com/tensorflow/tensorflow/releases?after=v1.6.0) the problem is that starting from version 1.6, "Prebuilt binaries will use AVX instructions.", so " This may break TF on older CPUs". So I unistalled tensorflow, and installed version 1.5. I also added two other papers to read, and I started to read one of them.
+
+**Thoughts:**  I had problems downloading the version 1.5 of tensorflow (time out errors)
+
+**Link to work:** [Reading paper 1] (https://www.researchgate.net/publication/305851017_An_overview_on_weight_initialization_methods_for_feedforward_neural_networks)
+
+
 
