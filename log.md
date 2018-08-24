@@ -456,3 +456,11 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
 **Link to work:** [Reading paper 1] (https://www.researchgate.net/publication/305851017_An_overview_on_weight_initialization_methods_for_feedforward_neural_networks)
 
+
+### Day 48.  August 24, 2018
+
+**Today's Progress:**  I installed theano without any issues and I finished the first paper reading. 
+
+**Thoughts:** I didn't found what I am looking for from the cited methods. May be I will in the second paper. Nevertheless, I will search if there is corresponding or resembling methods in tensorflow (or an other library).
+
+**Link to work:** no code yet.
