@@ -30,6 +30,15 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
 
+### Day 49.  August 25, 2018
+
+****Today's Progress:** I finished a half week of coursera courses  (I was late in the courses schedule)
+
+**Thoughts:** I learned some interesting facts that I can use in my porject 1.
+
+**Link to work:** no code yet
+
+
 
 ### Day 3: July 10, 2018
 
