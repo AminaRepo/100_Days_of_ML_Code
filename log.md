@@ -473,3 +473,22 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Thoughts:** I didn't found what I am looking for from the cited methods. May be I will in the second paper. Nevertheless, I will search if there is corresponding or resembling methods in tensorflow (or an other library).
 
 **Link to work:** no code yet.
+
+
+### Day 49.  August 25, 2018
+
+****Today's Progress:** I finished a half week of coursera courses  (I was late in the courses schedule)
+
+**Thoughts:** I learned some interesting facts that I can use in my porject 1.
+
+**Link to work:** no code yet
+
+
+
+### Day 50.  August 26, 2018
+
+**Today's Progress:** I started the submission exercices for the last week.
+
+**Thoughts:** I will try later to use similar code for my project 1.
+
+**Link to work:** no code yet.
