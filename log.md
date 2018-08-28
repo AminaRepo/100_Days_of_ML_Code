@@ -484,3 +484,16 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Thoughts:** using fmincg function for learning doesn't show how the learning process is done.
 
 **Link to work:** no code yet
+
+
+
+
+### Day 52.  August 28, 2018
+
+**Today's Progress:** I finished the week of courses but I am still late in the schedule.
+
+**Thoughts:** I am still late in my schedule.
+
+**Link to work:** no code yet.
+
+
