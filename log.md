@@ -497,3 +497,12 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Link to work:** no code yet.
 
 
+### Day 53.  August 29, 2018
+
+**Today's Progress:** I started the following week of coursera courses. For the problem of building tensorflow, since I will use on linux tensorflow version 1.5, and to avoid  possible issues related to the newer versions
+		     and to avoid possible issues related to the newer versions, I decided to build the same version (1.5) . So, I downloaded the corresponding version of blaze which is 0.8.0. I installed 
+		    the corresponding gcc version 2 (the version installed is 4.2.1, the needed one must be at least 4.8, the one I installed is 4.9.4). I 
+
+**Thoughts:**   I have later to correct path issues concerning the gcc verison (the one referred to by the system is still the older version). 
+
+**Link to work:** no code yet. In [installing tensorflow from source](https://www.tensorflow.org/install/install_sources) you can find all the corresponding working versions of tensorflow, gcc, blaze ...etc  
