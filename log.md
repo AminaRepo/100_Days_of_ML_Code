@@ -508,7 +508,7 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Link to work:** no code yet. In [installing tensorflow from source](https://www.tensorflow.org/install/install_sources) you can find all the corresponding working versions of tensorflow, gcc, blaze ...etc  
 
 
-### Day 53. August 30, 2018 
+### Day 54. August 30, 2018 
 
 **Today's Progress:**  I finished the week of courses and the quiz. I have to do the assignment. 
 
