@@ -532,4 +532,14 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Thoughts:**  I decided to focus on my Coursera courses first (the deadline approaches).
 
  **Link to work:** no code yet.
+ 
+ 
+ 
+### Day 55. August 31, 2018 
+
+**Today's Progress:**  I finished the assignment and started the next week courses.
+
+**Thoughts:**  I have to hurry up, I am still late.
+
+ **Link to work:** no code yet.
 
