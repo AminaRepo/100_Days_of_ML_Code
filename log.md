@@ -525,9 +525,7 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 
  **Link to work:** no code yet.
  
- 
- 
- 
+
  
 
 
@@ -538,3 +536,17 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Thoughts:**  Lot of ideas to apply in the project. But no time for that right now.
 
  **Link to work:** no code yet.
+ 
+ 
+ 
+ 
+
+### Day 57. September 02, 2018 
+
+**Today's Progress:**  I finished the other half of the week of courses . 
+
+**Thoughts:**  may be I will continue with the following courses before doing the assignment
+
+ **Link to work:** no code yet.
+ 
+ 
