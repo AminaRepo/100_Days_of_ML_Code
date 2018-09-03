@@ -569,4 +569,12 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
  
  
  
+ ### Day 58. September 03, 2018 
+
+**Today's Progress:**  I finished the submission and started the next week.
+
+**Thoughts:**  I am not late anymore in the schedule.
+
+ **Link to work:** no code yet.
+ 
 
