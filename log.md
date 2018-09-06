@@ -581,3 +581,16 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
 **Thoughts**  I started the design a long time ago. So I will try to finish it to start blogging. 
 
  **Link to work:** no code yet.
+ 
+ 
+ 
+
+
+### Day 61. September 06, 2018 
+
+**Today's Progress:**  I worked today on my blog design but I couldn't finish it.
+
+**Thoughts**  May be tomorrow it will be ready.
+
+ **Link to work:** no code yet.
+ 
