@@ -617,5 +617,14 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
  
  
  
+
+
+### Day 62. September 07, 2018 
+
+**Today's Progress:**  I finished the design of my blog. But,  right now, it will fit only desktop scree.
+
+**Thoughts**  Later I will have to clean the code and  make it fit to other screens, and automate some aspects of it. But, I will try to publish my first blog article this week ( even before the cleaning, fitting, and automating process).
+
+ **Link to work:** no code yet.
  
 
