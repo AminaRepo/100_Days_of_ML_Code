@@ -608,3 +608,10 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
  **Link to work:** no code yet.
  
  
+ ### Day 63. September 08, 2018 
+
+**Today's Progress:**  I continued with the courses. I finshed only a part of the week.
+
+**Thoughts**   I will continue with the courses now until I finish all of them.
+
+ **Link to work:** no code yet.
