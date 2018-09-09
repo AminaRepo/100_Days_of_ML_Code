@@ -633,7 +633,16 @@ The confusion matrix values was: [[12  3][ 6 15]]. I didn't change any parameter
  
  
  
+ 
+  ### Day 64. September 09, 2018 
 
+**Today's Progress:**  I continued with the courses until the assignment.
+
+**Thoughts**   I have a lot of things to do in parallel, it is why I am late in the course
+advacement.
+
+ **Link to work:** no code yet.
+ 
  
  
 
