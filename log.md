@@ -646,3 +646,13 @@ advacement.
  
  
 
+
+  ### Day 65. September 10, 2018 
+
+**Today's Progress:**  I did only the half of the assignment. I will do the other half tomorrow.
+
+**Thoughts**   I don't think I will use elements from this course in the project.
+
+ **Link to work:** no code yet.
+ 
+ 
