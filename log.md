@@ -656,3 +656,14 @@ advacement.
  **Link to work:** no code yet.
  
  
+ 
+ 
+   ### Day 66. September 11, 2018 
+
+**Today's Progress:**  I finally finshed the assignment. I have to finish after the end of this month.
+
+**Thoughts**   I am considering continuing this challenge after the end of the 100 days. Not one hour every day, 		but at a precise scheduled time.
+
+ **Link to work:** no code yet.
+ 
+ 
