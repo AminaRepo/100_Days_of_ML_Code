@@ -667,3 +667,12 @@ advacement.
  **Link to work:** no code yet.
  
  
+   ### Day 67. September 12, 2018 
+
+**Today's Progress:**  Another week of the course. This one has not an assignment task.
+
+**Thoughts**   Only one week and I finish the course.
+
+ **Link to work:** no code yet.
+ 
+ 
