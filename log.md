@@ -658,3 +658,14 @@ advacement.
 **Thoughts**   Only one week and I finish the course.
 
  **Link to work:** no code yet.
+ 
+ 
+ ### Day 68. September 13, 2018 
+
+**Today's Progress:**  I finally finished my 11 weeks courses. 
+
+**Thoughts**  I couldn't put my submission codes in GitHub because of the agreement to Coursera policy to not share our codes. But I will find a way to share what I learned without breaking the agreement
+
+
+ **Link to work:** no code yet.
+
