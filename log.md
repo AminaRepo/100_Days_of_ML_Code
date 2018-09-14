@@ -688,3 +688,11 @@ advacement.
 
  
  
+### Day 69. September 14, 2018 
+
+**Today's Progress:**  today spent in reading. 
+
+**Thoughts**  Since I finish writing my first blog article, I will publish the blog.
+
+
+ **Link to work:** no code yet.
