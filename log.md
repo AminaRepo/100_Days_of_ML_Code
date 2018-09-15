@@ -682,3 +682,10 @@ advacement.
 
  
 
+ ### Day 70. September 15, 2018 
+
+**Today's Progress:**  did some research on different python libraries  (related to ML) and their installation in google colab.
+
+**Thoughts**  I have to enhance my planning.
+
+ **Link to work:** no code yet.
