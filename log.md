@@ -707,3 +707,11 @@ advacement.
  **Link to work:** no code yet.
  
  
+ 
+  ### Day 71. September 16, 2018 
+
+**Today's Progress:**  another day spent in intalling python libraries in colab. Used different techniques of installation. But they all worked.
+
+**Thoughts**  The libraries where not only about ML.
+
+ **Link to work:** no code yet.
