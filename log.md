@@ -715,3 +715,17 @@ advacement.
 **Thoughts**  The libraries where not only about ML.
 
  **Link to work:** no code yet.
+ 
+ 
+   ### Day 72. September 17, 2018 
+
+**Today's Progress:**. I tride to use k-means clustering(unsupervised learning) in my classification project(supervised learning)
+
+**Thoughts** I have to modify the code before uploading it.
+
+ **Link to work:** I  combined my previous code of classification using keras and the code from
+https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
+ 
+ 
+
+ 
