@@ -724,7 +724,7 @@ advacement.
 **Thoughts** I have to modify the code before uploading it.
 
  **Link to work:** I  combined my previous code of classification using keras and the code from
-https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
+https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/ 
  
  
 
