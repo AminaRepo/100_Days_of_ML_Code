@@ -712,3 +712,12 @@ advacement.
  **Link to work:** I  combined my previous code of classification using keras and the code from
 https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/ 
  
+
+
+ ### Day 73. September 18, 2018 
+
+**Today's Progress:** I used the distances calculated by the k-mean algorithms from the centroids as estimation for a classification into a class.But I reached my allowed number of submission of today, so tomorrow I will try to see the score (to confirm that a cluster correspond to a particular class: cluster 0 correspond to class 0 ).
+
+**Thoughts** Later I will try to use the known labels of the training set to enhance the results (when it is given as parameter to the fitting algorithm, it is ignored).
+
+ **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb
