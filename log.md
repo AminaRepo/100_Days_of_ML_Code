@@ -721,3 +721,13 @@ https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
 **Thoughts** Later I will try to use the known labels of the training set to enhance the results (when it is given as parameter to the fitting algorithm, it is ignored).
 
  **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb
+
+
+   ### Day 74. September 19, 2018 
+
+**Today's Progress:** I changed the code by using the actual centers of the training data and using them to fit with the test data.
+
+**Thoughts** I had the same centroids for the training data. But fitting the test data with those centroids resulted in a different and better result. The centroid initialisation allowed me to clearly identify the actual classes. (when I used the center of the class 1 as the centroid of cluster 0, the resulting centroids were the same but inverted)
+
+ **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb
+ 
