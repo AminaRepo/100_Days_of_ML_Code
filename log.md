@@ -733,7 +733,7 @@ https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
 
 **Thoughts** Later I will try to use the known labels of the training set to enhance the results (when it is given as parameter to the fitting algorithm, it is ignored).
 
- **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb
+ **Link to work:** [k-mean](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb)
  
  
  
@@ -743,12 +743,12 @@ https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
 
 **Thoughts** I had the same centroids for the training data. But fitting the test data with those centroids resulted in a different and better result. The centroid initialisation allowed me to clearly identify the actual classes. (when I used the center of the class 1 as the centroid of cluster 0, the resulting centroids were the same but inverted)
 
- **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb
+ **Link to work:**[k-mean]( https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb)
  
  
    ### Day 75. September 20, 2018 
 
-**Today's Progress:** I tried today to apply the same algorithm on a standarized data. From this article(), the better standardization will be the z-score one. I tried it, even if accuracy calculated score was better, the score  after submission wasn't better than the previous one. I tried to use the gaussian mixture model, the results were even worse. 
+**Today's Progress:** I tried today to apply the same algorithm on a standarized data. From this article [Standardization and Its Effects on K-Means Clustering Algorithm](https://pdfs.semanticscholar.org/1d35/2dd5f030589ecfe8910ab1cc0dd320bf600d.pdf), the better standardization will be the z-score one. I tried it, even if accuracy calculated score was better, the score  after submission wasn't better than the previous one. I tried to use the gaussian mixture model, the results were even worse. 
 
 **Thoughts** I will use later the gaussian mixture model only to generate new data. I will have also to fine another way to transform the distances into estimations.
 
