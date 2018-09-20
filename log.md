@@ -731,3 +731,13 @@ https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
 
  **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/warmup_kmean.ipynb
  
+
+
+ 
+   ### Day 75. September 20, 2018 
+
+**Today's Progress:** I tried today to apply the same algorithm on a standarized data. From this article(), the better standardization will be the z-score one. I tried it, even if accuracy calculated score was better, the score  after submission wasn't better than the previous one. I tried to use the gaussian mixture model, the results were even worse. 
+
+**Thoughts** I will use later the gaussian mixture model only to generate new data. I will have also to fine another way to transform the distances into estimations.
+
+ **Link to work:** I used scipy to standarize the data and sklearn.mixture to use the GMM.
