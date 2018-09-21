@@ -756,3 +756,13 @@ https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
  
  
  
+ ### Day 76. September 21, 2018 
+
+**Today's Progress:** day spent in documents reading. 
+
+**Thoughts** I have another idea for generating new data, but I have to verify its validity. For now, I will apply the GMM.
+
+ **Link to work:** not modified yet.
+ 
+ 
+ 
