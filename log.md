@@ -765,4 +765,12 @@ https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
  **Link to work:** not modified yet.
  
  
+  
+ ### Day 77. September 22, 2018 
+
+**Today's Progress:** another reading today [Combination of K-Nearest Neighbor and K-Means based
+on Term Re-weighting for Classify Indonesian News](https://pdfs.semanticscholar.org/6c28/4829ff97e1b832f74c1e3c334885ed43ac3d.pdf) 
+
+**Thoughts** I will try to combine all these methodologies.
  
+ **Link to work:** not modified yet.
