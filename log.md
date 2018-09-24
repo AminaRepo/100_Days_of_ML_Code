@@ -774,3 +774,22 @@ on Term Re-weighting for Classify Indonesian News](https://pdfs.semanticscholar.
 **Thoughts** I will try to combine all these methodologies.
  
  **Link to work:** not modified yet.
+ 
+ 
+ 
+ ### Day 78. September 23, 2018 
+
+**Today's Progress:** spent time in documentation reading (and writing about it). 
+
+**Thoughts** Last night I forgot to log about it. When I remembered it, it was too late (1 am ).
+ 
+ **Link to work:** not modified yet.
+
+
+ ### Day 79. September 25, 2018 
+
+**Today's Progress:** spent another time in reading and writing.
+
+**Thoughts** tomorrow I will code. 
+ 
+ **Link to work:** not modified yet.
