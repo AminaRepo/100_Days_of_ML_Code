@@ -44,7 +44,7 @@ easy to understand ( I didn't need yet to do a documentation search about the la
 
 **Today's Progress**: I modified the calculation of the nodes' coordinates, but still working on it. I also enrolled to the [Machine learning free courses of Andrew Ng](https://www.coursera.org/learn/machine-learning)
 
-**Thoughts:** I may start coding the KNN algorithm after I am done with the binary tree
+**Thoughts:** I may start coding the algorithm after I am done with the binary tree
 
 **Link to work:** [my Binary Tree](https://github.com/AminaRepo/100_Days_of_ML_Code/tree/master/my-binary-tree%20)
 
@@ -792,4 +792,15 @@ on Term Re-weighting for Classify Indonesian News](https://pdfs.semanticscholar.
 
 **Thoughts** tomorrow I will code. 
  
+ **Link to work:** not modified yet.
+ 
+ 
+ 
+ 
+ ### Day 80. October 08, 2018 
+
+**Today's Progress:** It have been 13 days I didn't log. The reason is that I was working on other stuff, but they were not pure ML. So I hesitated to log them. Then, I decided to log only the tasks related to the ML projects.
+
+**Thoughts** I had a lot of things I said that I'll do  (but didn't realised them **yet**). I didn't forget them, but I am afraid if I say "I will do this tomorrow", I will not be able to do it. So I made a list. That's all I am going to say.
+
  **Link to work:** not modified yet.
