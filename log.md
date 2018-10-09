@@ -788,3 +788,17 @@ on Term Re-weighting for Classify Indonesian News](https://pdfs.semanticscholar.
 **Thoughts** I had a lot of things I said that I'll do  (but didn't realised them **yet**). I didn't forget them, but I am afraid if I say "I will do this tomorrow", I will not be able to do it. So I made a list. That's all I am going to say.
 
  **Link to work:** not modified yet.
+ 
+
+
+### Day 81. October 09, 2018 
+
+ 
+**Today's Progress:**  I generated today new data with the gaussian model and applied on the new and old data
+(combined)  the k-mean clustring. For the generation of the data I followed this [turorial](https://jakevdp.github.io/PythonDataScienceHandbook/05.12-gaussian-mixtures.html) from python data science handbook.
+Using the GMM class I had this warning: "clustrineDeprecationWarning: Class GMM is deprecated" ( I desactivated the warning with the following instruction: warnings.filterwarnings('ignore')). 
+To generate the new data, I hade to select the number of the gaussian model componenets (using the  Akaike information criterion estimator ). I fited the model (k-mean) to the training data, then I applied it  to the test data to predict the appartenance of class (a cluster). I Then I rescaled the results (the distances). From the previous tests, I assumed that cluster 0 corresponds to class 0 (not ill), so I inverted the distances (1-distance) from the cluster 1. Then I rescaled the results
+ 
+**Thoughts** I was going to explore reinforcement learning, but I had to stick to the list. 
+
+ **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/K_mean/new_data_generation.ipynb
