@@ -801,4 +801,6 @@ To generate the new data, I hade to select the number of the gaussian model comp
  
 **Thoughts** I was going to explore reinforcement learning, but I had to stick to the list. 
 
- **Link to work:** https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/K_mean/new_data_generation.ipynb
+ **Link to work:** [kmean_data_gen] (https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/%20%09K_mean/new_data_generation.ipynb)
+
+
