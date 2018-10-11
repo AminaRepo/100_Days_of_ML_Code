@@ -804,3 +804,11 @@ To generate the new data, I hade to select the number of the gaussian model comp
  **Link to work:** [kmean_data_gen] (https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/%20%09K_mean/new_data_generation.ipynb)
 
 
+ ### Day 82. October 11, 2018 
+
+**Today's Progress:**  Today it was about KNN algortihm. After reading some blogs about KNN, One of them was the  [turorial](https://www.datacamp.com/community/tutorials/k-nearest-neighbor-classification-scikit-learn) that explains how to calculate the estimation errors. To select the best value for K, I ploted the accuracy corresponding to each value of k , and I selected the better one. Then I predicted for real test values.
+
+ 
+**Thoughts** even if I selected the best value, the corresponding estimation error wasn't good (0.518). Also, the resulting values are only labels (0 or 1), which is not useful for my submission.
+
+ **Link to work:** [KNN] (https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/KNN/KNN.ipynb)
