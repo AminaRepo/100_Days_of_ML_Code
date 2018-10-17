@@ -812,3 +812,12 @@ To generate the new data, I hade to select the number of the gaussian model comp
 **Thoughts** even if I selected the best value, the corresponding estimation error wasn't good (0.518). Also, the resulting values are only labels (0 or 1), which is not useful for my submission.
 
  **Link to work:** [KNN] (https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/KNN/KNN.ipynb)
+
+
+ ### Day 83. October 17, 2018 
+ 
+ **Today's Progress:**  I searched for a way to obtain, from a KNN classification, an estimate of each classification: it is called estimation of the posterior probability. I found this article [Estimating the Posterior Probabilities Using the K-Nearest Neighbor Rule](http://alumnus.caltech.edu/~amir/posterior-prob-est.pdf).It referenced another method referenced in other papers ( on which the author based his ownn estimator ). I will try to apply the later one.
+  . 
+**Thoughts** I don't know if with the scikit-learn implementation, I can extract some necessary values. If I can't, I will have to implement the knn algorithm from scratch ( a lot of blogs already described how ).
+
+ **Link to work:** no code yet
