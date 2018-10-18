@@ -821,3 +821,13 @@ To generate the new data, I hade to select the number of the gaussian model comp
 **Thoughts** I don't know if with the scikit-learn implementation, I can extract some necessary values. If I can't, I will have to implement the knn algorithm from scratch ( a lot of blogs already described how ).
 
  **Link to work:** no code yet
+
+
+### Day 84. October 18, 2018 
+ 
+ **Today's Progress:**  I checked [scikit-learn documentation] (http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KneighborsClassifier.html), and I found that it already implements a probabilistic estimation : predict_proba(X). They do not explain how they implement the method. So, I had to check the [source code ] (https://github.com/scikit-learn/scikit-learn/blob/bac89c2/sklearn/neighbors/classification.py#L164). The later one relate on an other method: _get_weights. It attributes weights to the x values: uniformly, calculating the inverse distance , or using  a user defined function .  From: [_get_weights definition](https://programtalk.com/vs2/python/11621/scikit-learn/sklearn/neighbors/base.py/).
+
+**Thoughts** For the previous knn test, I thinck I choose the wrong number for k ( I had to choose the greatest and not the smallest value in the graph (the graph represented accuracies an not errors).
+An other thing I did, is that I fited the model to a partial set of the X values (and not the entire set). I corrected all these errors. An other problem I faced with the Knn classification, that the optimal K value is not the same for every data split
+
+ **Link to work:**  [corrected code ](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/KNN/KNN.ipynb)
