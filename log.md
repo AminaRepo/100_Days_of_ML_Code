@@ -831,3 +831,13 @@ To generate the new data, I hade to select the number of the gaussian model comp
 An other thing I did, is that I fited the model to a partial set of the X values (and not the entire set). I corrected all these errors. An other problem I faced with the Knn classification, that the optimal K value is not the same for every data split
 
  **Link to work:**  [corrected code ](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/master/KNN/KNN.ipynb)
+
+
+ ### Day 85. October 19, 2018 
+ 
+ **Today's Progress:**  To understand what predict_proba really does, rewrote it ( just reproduced instruction by instruction) from [source code ] (https://github.com/scikit-learn/scikit-learn/blob/bac89c2/sklearn/neighbors/classification.py#L164).  
+
+**Thoughts** I found that the weight used by default is uniform (no weights at all) . And that the probability is calculated the same way as  the referenced method I talked about previously( if it doesn’t take into account the neighbors weights). So I have just to apply predict_proba. But I think that the proposed method in the article can be applied by customizing the weight attribute of the knn classifier.
+
+ **Link to work:**  [predict_proba](https://github.com/AminaRepo/100_Days_of_ML_Code/blob/KNN/KNN.ipynb)
+ 
