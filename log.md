@@ -844,7 +844,7 @@ An other thing I did, is that I fited the model to a partial set of the X values
 
 ### Day 86. October 20, 2018 
  
- **Today's Progress:**  I applied the predict_method and made a submission: awful results. I decided to upload my blog to test it (even if its not finished, I added “the under construction image” downloaded from [pixabay.com](https://pixabay.com/en/photos/under construction/)) . I was going to use Filezilla. But the host of my website  [inifinity free ](https://infinityfree.net/)already have built-in tools for that. 
+ **Today's Progress:**  I applied the predict_method and made a submission: awful results. I also decided to upload my blog to test it (even if its not finished, I added “the under construction image” downloaded from [pixabay.com](https://pixabay.com/en/photos/under construction/)) . I was going to use Filezilla to upload it. But the host of my website  [inifinity free ](https://infinityfree.net/)already has built-in tools for that. 
 
 **Thoughts** The first Idea of the blog was about computing in general and other creative work. When I started the 100 days of ml challenge, I thought, may be I will include this journey as a category ( my first article was going to be about linear regression).  I don’t know yet what I am going to do.
  **Link to work:**  [my blog](http://www.creativeworkblog.review/index.html)
