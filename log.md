@@ -848,3 +848,13 @@ An other thing I did, is that I fited the model to a partial set of the X values
 
 **Thoughts** The first Idea of the blog was about computing in general and other creative work. When I started the 100 days of ml challenge, I thought, may be I will include this journey as a category ( my first article was going to be about linear regression).  I don’t know yet what I am going to do.
  **Link to work:**  [my blog](http://www.creativeworkblog.review/index.html)
+ 
+ 
+ 
+ ### Day 87. October 21, 2018 
+ 
+ **Today's Progress:**  I had to correct certain issues of the blog. Renaming some indexes  html files and update them at the same time (for the links). I changed the icon image too. So I had to correct and upload. To be mobile friendly, I added just a tag in html file (which is not sufficient at all). Right now, it is not view-able on smartphones
+
+**Thoughts**   following [siraj video] (https://www.youtube.com/watch?v=waXHrc2m9K8) about planning, I had to plan in one day some hours of 100 days of ml. So, I logged my progress in a file, and for each day, I published the corresponding section.  So, these issues weren’t present the 20th  October (supposed to be yesterday), because I already corrected them.
+
+ **Link to work:**  [my blog](http://www.creativeworkblog.review/index.html)
