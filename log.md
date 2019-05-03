@@ -858,3 +858,21 @@ An other thing I did, is that I fited the model to a partial set of the X values
 **Thoughts**   following [siraj video] (https://www.youtube.com/watch?v=waXHrc2m9K8) about planning, I had to plan in one day some hours of 100 days of ml. So, I logged my progress in a file, and for each day, I published the corresponding section.  So, these issues weren’t present the 20th  October (supposed to be yesterday), because I already corrected them.
 
  **Link to work:**  [my blog](http://www.creativeworkblog.review/index.html)
+ 
+ 
+  ### Days: 88-111 . Logged the 03th may 2019
+ 
+ **Today's Progress:**  I didn't logged for a while. The reason is that I was working in other projects. Since they are related to Machine learning, I decided to consider them as part of my #100DaysOfML. I wrote tutorial about AI, that took me more than 24 days. But I decided to attribute for each course already written a day.  So, 24 tutorials that can be found on github.
+
+**Thoughts**   I am still considering doing the tasks I planned.
+
+ **Link to work:**  [my blog](http://www.creativeworkblog.review/index.html)
+ 
+ ### Days: 112-118 . Logged the 03th may 2019
+ 
+ **Today's Progress:** I desigend another website that applies responsive design concepts. It is also viewable on smartphones. I used a free template but I adapted it to my website. 
+ 
+**Thoughts**   Considering the website, I wasn't sure about its use. In fact, I was going to use it for the project I was working on. Since the project didn't go well and ended prematurely, I combined my first idea of the website, with what I learned from the project and from this journey. And it resulted in a new project that I call AIM. Second thought, I just realize that this journey already ended : I have already spent more than 100 days of ML. But I have still have the unfinished tasks. I have some ideas of how to plan some of them. 
+
+**Link to work:**  [The website](http://www.aimosta.com)
+ 
